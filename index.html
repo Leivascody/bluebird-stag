@@ -1,0 +1,2456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>201–215 Stag Industrial Blvd | St. Charles County Flex | Bluebird Commercial Real Estate</title>
+<meta name="description" content="A 33,817 SF, 100% leased multi-tenant industrial flex acquisition in St. Charles County, MO — closed July 2025. Sample investor microsite from Bluebird Commercial Real Estate." />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="201–215 Stag Industrial Blvd · Bluebird Commercial Real Estate" />
+<meta property="og:description" content="Sample investor microsite — multi-tenant industrial flex deal closed July 2025 in the St. Charles County submarket of St. Louis MSA." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="images/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="201–215 Stag Industrial Blvd · Bluebird Commercial Real Estate" />
+<meta name="twitter:description" content="Sample investor microsite — multi-tenant industrial flex deal closed July 2025." />
+<meta name="twitter:image" content="images/og-image.jpg" />
+<meta name="theme-color" content="#0D1B2B" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" sizes="256x256" href="images/favicon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<!-- This is a public sales-sample microsite for a closed deal. No investor access gate. -->
+<!-- For active 506(b) offerings, the Bluebird investor-microsite product includes a full access gate (see Wedgeway template). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "201–215 Stag Industrial Blvd · Bluebird Commercial Real Estate",
+  "url": "https://leivascody.github.io/bluebird-stag/",
+  "description": "Sample investor microsite for a multi-tenant industrial flex acquisition in St. Charles County, MO. Closed July 2025 by Bluebird Commercial Real Estate.",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "images/og-image.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "about": {
+    "@type": "Place",
+    "name": "201–215 Stag Industrial Blvd",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "201–215 Stag Industrial Blvd",
+      "addressLocality": "Lake St. Louis",
+      "addressRegion": "MO",
+      "postalCode": "63367",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.7959,
+      "longitude": -90.7857
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bluebird Commercial Real Estate",
+    "url": "https://www.bluebirdcre.co/",
+    "logo": "images/bluebird-logo.png"
+  }
+}
+</script>
+<style>
+  :root{
+    --navy:#0D1B2B;
+    --navy-2:#122236;
+    --navy-3:#1A2B40;
+    --gold:#C7916B;
+    --gold-soft:rgba(199,145,107,.10);
+    --gold-line:rgba(199,145,107,.28);
+    --light:#F8FAFC;
+    --light-2:#EEF2F7;
+    --ink:#212A36;
+    --ink-soft:#4B5568;
+    --line:rgba(255,255,255,.08);
+    --line-dark:rgba(13,27,43,.10);
+    --serif:"Playfair Display", Georgia, "Times New Roman", serif;
+    --sans:Inter,-apple-system,system-ui,"Segoe UI",sans-serif;
+    --container:1200px;
+    --container-narrow:1040px;
+    --radius-sm:10px;
+    --radius:14px;
+    --radius-lg:22px;
+    --shadow-soft:0 14px 40px rgba(0,0,0,.18);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:90px}
+  body{
+    background:var(--navy);
+    color:#FFFFFF;
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+  h1,h2,h3,h4,h5{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;margin:0}
+  h1{font-size:clamp(44px,6.4vw,80px);line-height:1.02;letter-spacing:-1.8px;font-weight:600}
+  h2{font-size:clamp(30px,3.2vw,42px);line-height:1.12}
+  h3{font-size:clamp(20px,1.6vw,24px);line-height:1.25}
+  p{margin:0 0 1em}
+  .container{max-width:var(--container);margin:0 auto;padding:0 28px}
+  .container-narrow{max-width:var(--container-narrow);margin:0 auto;padding:0 28px}
+
+  /* ---------------- NAV ---------------- */
+  .nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:rgba(13,27,43,.85);
+    backdrop-filter:saturate(140%) blur(10px);
+    -webkit-backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.06);
+    transition:background .25s ease, box-shadow .25s ease;
+  }
+  .nav.scrolled{background:rgba(13,27,43,.96);box-shadow:0 6px 24px rgba(0,0,0,.25)}
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    height:81px;max-width:var(--container);margin:0 auto;padding:0 28px;
+  }
+  .brand{display:flex;align-items:center;gap:10px}
+  .brand img{height:36px;width:auto;filter:brightness(0) invert(1)}
+  .nav-links{display:flex;align-items:center;gap:36px}
+  .nav-links a{
+    font-size:14px;font-weight:500;color:#fff;opacity:.92;
+    transition:color .2s,opacity .2s;
+  }
+  .nav-links a:hover{color:var(--gold);opacity:1}
+  .nav-cta{display:flex;align-items:center;gap:18px}
+  .nav-cta .login{font-size:13px;font-weight:500;color:#fff;opacity:.85}
+  .nav-cta .login:hover{color:var(--gold);opacity:1}
+  .btn-pill{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--gold);color:var(--navy);
+    font-weight:700;font-size:13px;letter-spacing:.025em;
+    padding:10px 22px;border-radius:10px;
+    transition:transform .15s ease, box-shadow .15s ease, background .2s;
+  }
+  .btn-pill:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(199,145,107,.32);background:#d29e75}
+  .btn-rounded{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--gold);color:var(--navy);
+    font-weight:600;font-size:14px;
+    padding:14px 28px;border-radius:9999px;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn-rounded:hover{transform:translateY(-1px);box-shadow:0 12px 30px rgba(199,145,107,.35)}
+  .btn-link{font-weight:600;font-size:14px;color:#fff;display:inline-flex;gap:8px;align-items:center;padding:14px 8px}
+  .btn-link:hover{color:var(--gold)}
+  .btn-ghost{
+    display:inline-flex;align-items:center;gap:10px;
+    background:transparent;color:#fff;
+    font-weight:600;font-size:14px;
+    padding:13px 26px;border-radius:9999px;
+    border:1px solid rgba(255,255,255,.22);
+    transition:border-color .2s,background .2s;
+  }
+  .btn-ghost:hover{border-color:var(--gold);background:rgba(199,145,107,.08)}
+
+  /* ---------------- HERO ---------------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    padding:160px 0 100px;
+    display:flex;align-items:center;
+    color:#fff;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:var(--navy);
+    z-index:0;
+  }
+  .hero-video-bg{
+    position:absolute;inset:0;z-index:0;
+    overflow:hidden;
+  }
+  .hero-video-bg video{
+    position:absolute;
+    top:50%;left:50%;
+    min-width:100%;min-height:100%;
+    width:auto;height:auto;
+    transform:translate(-50%,-50%);
+    object-fit:cover;
+  }
+  .hero-video-bg::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(110deg,
+      rgba(13,27,43,.92) 0%,
+      rgba(13,27,43,.78) 38%,
+      rgba(13,27,43,.55) 70%,
+      rgba(13,27,43,.38) 100%);
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(110deg,
+      rgba(13,27,43,.94) 0%,
+      rgba(13,27,43,.84) 38%,
+      rgba(13,27,43,.62) 70%,
+      rgba(13,27,43,.45) 100%);
+    z-index:1;
+  }
+  .hero-inner{position:relative;z-index:2;width:100%}
+  .hero-copy{max-width:760px}
+  .pill{
+    display:inline-flex;align-items:center;gap:10px;
+    border:1px solid var(--gold-line);
+    color:var(--gold);
+    background:var(--gold-soft);
+    padding:8px 18px;border-radius:9999px;
+    font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    margin-bottom:28px;
+  }
+  .pill svg{width:14px;height:14px;fill:var(--gold)}
+  .hero h1 .accent{color:var(--gold);display:block;font-style:italic;font-weight:500}
+  .hero p.lead{
+    font-size:clamp(16px,1.25vw,18px);
+    line-height:1.7;color:rgba(255,255,255,.84);
+    max-width:620px;margin:28px 0 40px;
+  }
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-bottom:72px}
+  .hero-stats{
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:36px;max-width:920px;
+  }
+  .hero-stat{display:flex;align-items:flex-start;gap:14px}
+  .hero-stat-icon{
+    flex:0 0 36px;height:36px;border-radius:8px;
+    display:grid;place-items:center;
+    background:var(--gold-soft);color:var(--gold);
+  }
+  .hero-stat-icon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.6}
+  .hero-stat-num{
+    font-family:var(--serif);font-size:36px;font-weight:600;
+    color:var(--gold);line-height:1;letter-spacing:-.02em;
+  }
+  .hero-stat-label{
+    font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:rgba(255,255,255,.7);margin-top:6px;
+  }
+
+  /* ---------------- SECTION BASICS ---------------- */
+  section{position:relative}
+  .section{padding:120px 0}
+  .section-light{background:var(--light);color:var(--ink)}
+  .section-light h1,.section-light h2,.section-light h3,.section-light h4{color:var(--ink)}
+  .section-navy{background:var(--navy);color:#fff}
+  .section-navy-2{background:var(--navy-2);color:#fff}
+  .section-eyebrow{
+    color:var(--gold);font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+    margin-bottom:18px;display:inline-block;
+  }
+  .section-head{max-width:760px;margin:0 auto 64px;text-align:center}
+  .section-head.left{margin-left:0;text-align:left}
+  .section-head p{
+    margin-top:18px;
+    color:var(--ink-soft);
+    font-size:17px;line-height:1.7;
+  }
+  .section-navy .section-head p,
+  .section-navy-2 .section-head p{color:rgba(255,255,255,.74)}
+
+  /* ---------------- INVESTMENT HIGHLIGHTS ---------------- */
+  .cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  .card{
+    background:#fff;border:1px solid var(--line-dark);
+    padding:36px 28px;border-radius:var(--radius);
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft);border-color:var(--gold-line)}
+  .card-icon{
+    width:48px;height:48px;border-radius:12px;
+    background:var(--gold-soft);color:var(--gold);
+    display:grid;place-items:center;margin-bottom:24px;
+  }
+  .card-icon svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.6}
+  .card h3{font-size:20px;margin-bottom:12px;color:var(--ink)}
+  .card p{color:var(--ink-soft);font-size:15px;line-height:1.65;margin:0}
+
+  /* ---------------- PROPERTY OVERVIEW SPLIT ---------------- */
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:start}
+  .split-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .split-gallery .hero-photo{grid-column:1 / -1;position:relative}
+  .split-gallery .sub-photo{position:relative}
+  .split-gallery img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    border-radius:var(--radius-lg);
+    box-shadow:0 30px 80px rgba(0,0,0,.4);
+    transition:transform .5s ease, box-shadow .5s ease;
+  }
+  .split-gallery .hero-photo img{aspect-ratio:16/9}
+  .split-gallery .sub-photo img{aspect-ratio:4/3;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+  .split-gallery .sub-photo.wide{grid-column:1 / -1}
+  .split-gallery .sub-photo.wide img{aspect-ratio:16/9}
+  .split-gallery a:hover img,.split-gallery .hero-photo:hover img,.split-gallery .sub-photo:hover img{
+    transform:translateY(-3px);
+    box-shadow:0 36px 90px rgba(0,0,0,.5);
+  }
+  .split-gallery .badge{
+    position:absolute;left:24px;bottom:24px;
+    background:rgba(13,27,43,.92);color:#fff;
+    padding:14px 22px;border-radius:12px;
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+    border-left:3px solid var(--gold);
+  }
+  .split-gallery .photo-caption{
+    position:absolute;left:18px;bottom:16px;
+    background:rgba(13,27,43,.82);color:#fff;
+    padding:8px 14px;border-radius:8px;
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+    backdrop-filter:blur(6px);
+  }
+  /* legacy class, preserved for safety */
+  .split-img{position:relative}
+  .split-img img{
+    width:100%;height:100%;object-fit:cover;
+    border-radius:var(--radius-lg);
+    box-shadow:0 30px 80px rgba(0,0,0,.4);
+    aspect-ratio:4/3;
+  }
+  .split-img .badge{
+    position:absolute;left:24px;bottom:24px;
+    background:rgba(13,27,43,.92);color:#fff;
+    padding:14px 22px;border-radius:12px;
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+    border-left:3px solid var(--gold);
+  }
+  .detail-table{width:100%;border-collapse:collapse;margin-top:24px}
+  .detail-table tr{border-bottom:1px solid var(--line)}
+  .section-light .detail-table tr{border-bottom:1px solid var(--line-dark)}
+  .detail-table td{padding:14px 0;font-size:15px;vertical-align:top}
+  .detail-table td:first-child{
+    color:rgba(255,255,255,.66);
+    width:46%;font-weight:500;
+  }
+  .section-light .detail-table td:first-child{color:var(--ink-soft)}
+  .detail-table td:last-child{font-weight:600;text-align:right}
+
+  /* ---------------- TENANT TABLE ---------------- */
+  .data-table{width:100%;border-collapse:collapse;font-size:14.5px;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line-dark)}
+  .data-table thead th{
+    background:var(--navy);color:#fff;
+    text-align:left;font-weight:600;font-size:12px;
+    letter-spacing:.12em;text-transform:uppercase;
+    padding:18px 22px;
+  }
+  .data-table tbody td{padding:18px 22px;color:var(--ink);border-top:1px solid var(--line-dark)}
+  .data-table tbody tr:hover{background:var(--light-2)}
+  .data-table tbody td:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+
+  .rollover{margin-top:38px}
+  .rollover-bar{
+    display:flex;height:46px;border-radius:10px;overflow:hidden;
+    border:1px solid var(--line-dark);background:#fff;
+  }
+  .rollover-seg{display:grid;place-items:center;color:#fff;font-weight:600;font-size:12px;letter-spacing:.04em;padding:0 8px;text-align:center}
+  .rollover-legend{display:flex;flex-wrap:wrap;gap:18px 28px;margin-top:14px;font-size:13px;color:var(--ink-soft)}
+  .rollover-legend span{display:inline-flex;align-items:center;gap:8px}
+  .rollover-legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+
+  /* ---------------- CHART / RETURNS ---------------- */
+  .chart-card{
+    background:#fff;border:1px solid var(--line-dark);
+    border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow-soft);
+  }
+  .chart-wrap{position:relative;height:380px}
+
+  .returns-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}
+  .return-tile{
+    background:#fff;border:1px solid var(--line-dark);
+    border-radius:var(--radius);padding:26px;color:var(--ink);
+  }
+  .return-tile .lbl{
+    font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-soft);margin-bottom:12px;
+  }
+  .return-tile .val{
+    font-family:var(--serif);font-size:36px;font-weight:600;
+    color:var(--gold);line-height:1;letter-spacing:-.02em;
+  }
+
+  /* ---------------- INVESTOR CALCULATOR ---------------- */
+  .calc-card{
+    background:#fff;border:1px solid var(--line-dark);
+    border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow-soft);
+  }
+  .amount-picker{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:36px;
+  }
+  .amount-btn{
+    appearance:none;cursor:pointer;font-family:inherit;
+    padding:22px 10px;border-radius:var(--radius);
+    border:1.5px solid var(--line-dark);background:#fff;color:var(--ink);
+    font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:-.01em;
+    transition:all .18s ease;
+  }
+  .amount-btn .sub{
+    display:block;font-family:var(--sans);font-size:11px;font-weight:600;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);
+    margin-top:6px;
+  }
+  .amount-btn:hover{border-color:var(--gold);color:var(--gold)}
+  .amount-btn.active{
+    background:var(--navy);color:#fff;border-color:var(--navy);
+  }
+  .amount-btn.active .sub{color:rgba(199,145,107,.95)}
+  .calc-results{
+    display:grid;grid-template-columns:1.35fr 1fr;gap:32px;
+  }
+  .calc-flows{
+    background:var(--bone);border:1px solid var(--line-dark);
+    border-radius:var(--radius);padding:28px;
+  }
+  .calc-flows h3{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px;font-weight:600;font-family:var(--sans)}
+  .calc-flows table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+  .calc-flows th,.calc-flows td{
+    padding:12px 4px;text-align:right;font-size:14px;border-bottom:1px solid var(--line-dark);
+  }
+  .calc-flows th:first-child,.calc-flows td:first-child{text-align:left;color:var(--ink-soft);font-weight:500}
+  .calc-flows thead th{
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
+    font-weight:600;border-bottom:1.5px solid var(--ink);
+  }
+  .calc-flows tbody td{color:var(--ink)}
+  .calc-flows tr.total td{
+    border-top:2px solid var(--ink);border-bottom:0;padding-top:16px;
+    font-family:var(--serif);font-size:17px;font-weight:600;color:var(--ink);
+  }
+  .calc-flows tr.total td:last-child{color:var(--gold)}
+  .calc-kpis{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start}
+  .kpi-tile{
+    background:var(--navy);color:#fff;padding:24px;border-radius:var(--radius);
+    border:1px solid var(--navy-2);
+  }
+  .kpi-tile .lbl{
+    font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:rgba(255,255,255,.65);margin-bottom:10px;
+  }
+  .kpi-tile .val{
+    font-family:var(--serif);font-size:30px;font-weight:600;color:var(--gold);
+    line-height:1;letter-spacing:-.02em;
+  }
+  .kpi-tile.wide{grid-column:1/-1}
+  .kpi-tile.wide .val{font-size:26px}
+  .calc-note{
+    margin-top:22px;font-size:12.5px;color:var(--ink-soft);line-height:1.6;
+  }
+
+  /* ---------------- CAPITAL STRUCTURE ---------------- */
+  .stack-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .panel{
+    background:#fff;border:1px solid var(--line-dark);
+    padding:32px;border-radius:var(--radius);color:var(--ink);
+  }
+  .panel h3{font-size:18px;color:var(--ink);margin-bottom:6px}
+  .panel .sub{font-size:13px;color:var(--ink-soft);margin-bottom:18px}
+  .panel ul{list-style:none;padding:0;margin:0}
+  .panel ul li{
+    display:flex;justify-content:space-between;gap:16px;
+    padding:12px 0;border-top:1px solid var(--line-dark);font-size:14.5px;
+  }
+  .panel ul li:first-child{border-top:0;padding-top:0}
+  .panel ul li b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+
+  /* ---------------- COMPARE TABLE ---------------- */
+  .compare{
+    background:var(--navy-2);border:1px solid var(--line);
+    border-radius:var(--radius-lg);overflow:hidden;
+  }
+  .compare table{width:100%;border-collapse:collapse;font-size:15px}
+  .compare thead th{
+    color:rgba(255,255,255,.7);font-weight:600;font-size:12px;
+    letter-spacing:.16em;text-transform:uppercase;
+    text-align:left;padding:22px 28px;background:rgba(255,255,255,.03);
+  }
+  .compare thead th:not(:first-child){text-align:center}
+  .compare tbody td{
+    padding:20px 28px;border-top:1px solid var(--line);
+    font-size:15px;color:rgba(255,255,255,.92);
+  }
+  .compare tbody td:first-child{font-weight:500;color:#fff}
+  .compare tbody td:not(:first-child){text-align:center}
+  .compare .yes{color:var(--gold);font-weight:600}
+
+  /* ---------------- TIMELINE ---------------- */
+  .timeline{position:relative;max-width:920px;margin:0 auto}
+  .timeline::before{
+    content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+    background:linear-gradient(to bottom, transparent, var(--gold-line) 8%, var(--gold-line) 92%, transparent);
+    transform:translateX(-50%);
+  }
+  .tl-item{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:48px;padding:28px 0}
+  .tl-item .tl-card{
+    background:#fff;color:var(--ink);
+    border:1px solid var(--line-dark);
+    border-radius:var(--radius);padding:24px 26px;
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+  }
+  .tl-item .tl-card h4{font-size:18px;color:var(--ink);margin:0 0 4px}
+  .tl-item .tl-card .when{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px}
+  .tl-item .tl-card p{font-size:14.5px;color:var(--ink-soft);margin:0;line-height:1.65}
+  .tl-item:nth-child(even) .tl-card{grid-column:2}
+  .tl-item:nth-child(even) .spacer{grid-column:1}
+  .tl-item::after{
+    content:"";position:absolute;left:50%;top:42px;
+    width:14px;height:14px;border-radius:50%;
+    background:var(--gold);border:3px solid #fff;
+    transform:translateX(-50%);box-shadow:0 0 0 3px var(--gold-soft);
+  }
+
+  /* ---------------- DRONE VIDEO BREAK ---------------- */
+  .video-break{
+    position:relative;
+    padding:0;
+    overflow:hidden;
+    background:var(--navy);
+  }
+  .video-break-inner{
+    position:relative;
+    max-width:100%;
+    aspect-ratio:16/9;
+  }
+  .video-break video{
+    width:100%;height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .video-break-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(13,27,43,.3) 0%, transparent 30%, transparent 70%, rgba(13,27,43,.5) 100%);
+    pointer-events:none;
+    z-index:1;
+  }
+  .video-break-caption{
+    position:absolute;bottom:0;left:0;right:0;z-index:2;
+    padding:28px 40px;
+    display:flex;align-items:center;gap:14px;
+  }
+  .video-break-caption .play-icon{
+    width:40px;height:40px;
+    background:rgba(199,145,107,.85);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+    backdrop-filter:blur(4px);
+  }
+  .video-break-caption .play-icon svg{width:16px;height:16px;fill:#fff;margin-left:2px}
+  .video-break-caption span{
+    font-family:var(--sans);font-size:13px;font-weight:500;
+    color:rgba(255,255,255,.85);letter-spacing:.06em;text-transform:uppercase;
+  }
+  .video-controls{
+    position:absolute;inset:0;z-index:3;
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+  }
+  .video-controls .big-play{
+    width:80px;height:80px;
+    background:rgba(199,145,107,.9);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    transition:transform .25s ease, background .25s ease;
+    box-shadow:0 8px 32px rgba(0,0,0,.3);
+  }
+  .video-controls .big-play:hover{transform:scale(1.08);background:var(--gold)}
+  .video-controls .big-play svg{width:28px;height:28px;fill:#fff;margin-left:3px}
+  .video-controls.playing .big-play{opacity:0;pointer-events:none;transition:opacity .3s}
+  .video-controls.playing:hover .big-play{opacity:.7;pointer-events:auto}
+
+  /* Gallery featured video */
+  .gallery-video-featured{
+    grid-column:1 / -1;
+    position:relative;
+    aspect-ratio:16/9;
+    border-radius:12px;
+    overflow:hidden;
+    background:#000;
+    cursor:pointer;
+    margin-bottom:8px;
+  }
+  .gallery-video-featured video{
+    width:100%;height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .gallery-video-badge{
+    position:absolute;top:16px;left:16px;z-index:2;
+    display:flex;align-items:center;gap:8px;
+    background:rgba(13,27,43,.75);
+    backdrop-filter:blur(6px);
+    padding:8px 16px;border-radius:9999px;
+    font-size:12px;font-weight:600;color:#fff;
+    letter-spacing:.04em;text-transform:uppercase;
+  }
+  .gallery-video-badge svg{width:14px;height:14px;fill:var(--gold)}
+
+  /* Property section video */
+  .split-video{
+    grid-column:1 / -1;
+    position:relative;
+    aspect-ratio:16/9;
+    border-radius:var(--radius);
+    overflow:hidden;
+    cursor:pointer;
+    background:#000;
+    margin-top:4px;
+  }
+  .split-video video{width:100%;height:100%;object-fit:cover;display:block}
+
+  /* ---------------- GALLERY ---------------- */
+  .gallery-tabs{display:flex;justify-content:center;gap:8px;margin-bottom:36px;flex-wrap:wrap}
+  .gallery-tab{
+    background:rgba(255,255,255,.04);color:rgba(255,255,255,.78);
+    padding:10px 22px;border-radius:9999px;font-size:13px;font-weight:500;
+    border:1px solid var(--line);transition:all .2s;
+  }
+  .gallery-tab:hover{color:#fff;border-color:var(--gold-line)}
+  .gallery-tab.active{background:var(--gold);color:var(--navy);border-color:var(--gold);font-weight:700}
+  .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .g-item{
+    position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:12px;
+    cursor:zoom-in;background:#000;
+  }
+  .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease, opacity .3s}
+  .g-item:hover img{transform:scale(1.06);opacity:.92}
+  .g-item::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(to top, rgba(13,27,43,.4), transparent 50%);
+    opacity:0;transition:opacity .25s;
+  }
+  .g-item:hover::after{opacity:1}
+
+  /* Lightbox */
+  .lb{
+    position:fixed;inset:0;z-index:200;background:rgba(8,16,28,.95);
+    display:none;align-items:center;justify-content:center;padding:40px;
+  }
+  .lb.open{display:flex;animation:fade .25s ease}
+  .lb img{max-width:96%;max-height:90vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .lb .close,.lb .nav-btn{
+    position:absolute;top:50%;transform:translateY(-50%);
+    width:48px;height:48px;border-radius:50%;
+    background:rgba(255,255,255,.08);color:#fff;font-size:20px;
+    display:grid;place-items:center;border:1px solid rgba(255,255,255,.15);
+    cursor:pointer;transition:background .2s;
+  }
+  .lb .nav-btn:hover{background:var(--gold);color:var(--navy)}
+  .lb .prev{left:30px}
+  .lb .next{right:30px}
+  .lb .close{top:30px;right:30px;left:auto;transform:none}
+  .lb .counter{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:13px;letter-spacing:.08em}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+
+  /* ---------------- TEAM ---------------- */
+  .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+  .team-card{
+    background:#fff;border:1px solid var(--line-dark);
+    border-radius:var(--radius);padding:36px;color:var(--ink);
+    display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:start;
+  }
+  .team-card img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid var(--gold-soft)}
+  .team-card .role{
+    font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:6px;
+  }
+  .team-card h3{margin:0 0 12px;color:var(--ink)}
+  .team-card p{font-size:14.5px;line-height:1.7;color:var(--ink-soft);margin:0}
+
+  /* ---------------- CTA / CONTACT ---------------- */
+  .cta-band{
+    background:linear-gradient(135deg, var(--navy) 0%, var(--navy-3) 100%);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:96px 0;text-align:center;
+  }
+  .cta-band h2{margin-bottom:18px;color:#fff}
+  .cta-band p{color:rgba(255,255,255,.74);max-width:620px;margin:0 auto 36px;font-size:17px}
+  .cta-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+
+  /* ---------------- FOOTER ---------------- */
+  footer{background:#08111C;color:rgba(255,255,255,.7);padding:64px 0 32px;border-top:1px solid var(--line)}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+  .foot-col h4{font-size:13px;color:#fff;letter-spacing:.16em;text-transform:uppercase;font-family:var(--sans);font-weight:600;margin-bottom:18px}
+  .foot-col a,.foot-col p{display:block;font-size:14px;color:rgba(255,255,255,.65);margin-bottom:10px;line-height:1.6}
+  .foot-col a:hover{color:var(--gold)}
+  .foot-brand img{height:40px;margin-bottom:18px;filter:brightness(0) invert(1)}
+  .foot-brand p{font-size:14px;color:rgba(255,255,255,.65);max-width:340px;margin:0}
+  .foot-bot{
+    border-top:1px solid var(--line);padding-top:24px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+    font-size:12.5px;color:rgba(255,255,255,.55);
+  }
+  .disclaimer{margin-top:24px;font-size:12px;color:rgba(255,255,255,.45);max-width:920px;line-height:1.65}
+
+  /* ---------------- ACCESS GATE ---------------- */
+  html.gated body{overflow:hidden}
+  .access-gate{
+    position:fixed;inset:0;z-index:9999;
+    background:
+      radial-gradient(ellipse at 20% 0%, rgba(199,145,107,.14), transparent 55%),
+      radial-gradient(ellipse at 90% 100%, rgba(26,43,64,.8), transparent 60%),
+      #0D1B2B;
+    display:flex;justify-content:center;align-items:flex-start;
+    padding:28px;overflow-y:auto;-webkit-overflow-scrolling:touch;
+    font-family:var(--sans);
+  }
+  .access-gate .gate-card{margin:auto 0}
+  .access-gate::before{
+    content:"";position:absolute;inset:0;
+    background:url("https://cdn.jsdelivr.net/gh/Leivascody/bluebird-wedgeway@main/images/noise.svg");
+    opacity:.04;pointer-events:none;
+  }
+  .gate-card{
+    position:relative;z-index:2;
+    width:100%;max-width:520px;
+    background:rgba(18,34,54,.92);
+    border:1px solid rgba(199,145,107,.28);
+    border-radius:var(--radius-lg);
+    padding:42px 44px 36px;
+    color:#fff;
+    box-shadow:0 40px 120px rgba(0,0,0,.55);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+  }
+  .gate-card img.logo{height:38px;width:auto;margin-bottom:22px;filter:brightness(0) invert(1)}
+  .gate-eyebrow{
+    color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.22em;
+    text-transform:uppercase;margin-bottom:14px;display:block;
+  }
+  .gate-card h2{
+    font-family:var(--serif);font-size:26px;font-weight:600;line-height:1.2;
+    color:#fff;margin:0 0 12px;letter-spacing:-.01em;
+  }
+  .gate-card .lede{
+    font-size:14px;line-height:1.65;color:rgba(255,255,255,.8);margin:0 0 22px;
+  }
+  .gate-field{display:block;margin-bottom:16px}
+  .gate-field label{
+    display:block;font-size:11px;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;color:rgba(255,255,255,.62);margin-bottom:8px;
+  }
+  .gate-field input[type="text"],.gate-field input[type="email"]{
+    width:100%;box-sizing:border-box;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.16);
+    color:#fff;font-family:inherit;font-size:15px;
+    padding:14px 16px;border-radius:10px;letter-spacing:.04em;
+    transition:border-color .2s, background .2s;
+  }
+  .gate-field input[type="text"]:focus,.gate-field input[type="email"]:focus{
+    outline:none;border-color:var(--gold);
+    background:rgba(255,255,255,.07);
+  }
+  .gate-check{
+    display:flex;gap:12px;align-items:flex-start;
+    padding:14px 16px;margin-bottom:12px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.09);
+    border-radius:10px;cursor:pointer;
+    transition:background .2s, border-color .2s;
+  }
+  .gate-check:hover{background:rgba(255,255,255,.05);border-color:rgba(199,145,107,.3)}
+  .gate-check input{
+    appearance:none;-webkit-appearance:none;
+    width:18px;height:18px;flex-shrink:0;margin-top:1px;
+    border:1.5px solid rgba(255,255,255,.35);
+    border-radius:4px;background:transparent;
+    cursor:pointer;position:relative;
+    transition:all .2s;
+  }
+  .gate-check input:checked{background:var(--gold);border-color:var(--gold)}
+  .gate-check input:checked::after{
+    content:"";position:absolute;left:4px;top:0px;
+    width:5px;height:10px;border:solid var(--navy);
+    border-width:0 2px 2px 0;transform:rotate(45deg);
+  }
+  .gate-check span{font-size:13px;line-height:1.5;color:rgba(255,255,255,.85)}
+  .gate-check span b{color:#fff;font-weight:600}
+  .gate-submit{
+    width:100%;margin-top:18px;
+    background:var(--gold);color:var(--navy);
+    font-weight:700;font-size:14px;letter-spacing:.02em;
+    padding:16px;border-radius:10px;cursor:pointer;
+    transition:transform .15s, box-shadow .2s, background .2s, opacity .2s;
+  }
+  .gate-submit:hover:not(:disabled){background:#d29e75;transform:translateY(-1px);box-shadow:0 10px 26px rgba(199,145,107,.35)}
+  .gate-submit:disabled{opacity:.45;cursor:not-allowed}
+  .gate-error{
+    display:none;color:#F7B5A2;font-size:13px;margin-top:10px;
+    background:rgba(176,90,60,.12);border:1px solid rgba(176,90,60,.3);
+    padding:10px 14px;border-radius:8px;
+  }
+  .gate-error.show{display:block}
+  .gate-foot{
+    margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);
+    font-size:11.5px;line-height:1.6;color:rgba(255,255,255,.52);
+  }
+  .gate-foot a{color:var(--gold);border-bottom:1px dotted rgba(199,145,107,.4)}
+  .gate-foot a:hover{color:#d29e75}
+  @media (max-width:540px){
+    .gate-card{padding:32px 26px 28px}
+    .gate-card h2{font-size:22px}
+  }
+
+  /* ---------------- 506(b) PRIVATE PLACEMENT BANNER ---------------- */
+  .private-banner{
+    background:linear-gradient(90deg, #1A2B40 0%, #0D1B2B 100%);
+    border-bottom:1px solid var(--gold-line);
+    color:#fff;padding:10px 0;
+    font-size:12px;letter-spacing:.08em;text-align:center;
+  }
+  .private-banner b{color:var(--gold);font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+  .private-banner .sep{color:rgba(199,145,107,.5);margin:0 10px}
+
+  /* ---------------- DEAL SNAPSHOT TILES ---------------- */
+  .deal-snapshot{
+    display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:38px;
+    background:#fff;padding:28px;border-radius:var(--radius-lg);
+    border:1px solid var(--line-dark);box-shadow:var(--shadow-soft);
+  }
+  .deal-snapshot .tile{padding:6px 4px;text-align:left;border-right:1px solid var(--line-dark)}
+  .deal-snapshot .tile:last-child{border-right:0}
+  .deal-snapshot .tile .lbl{
+    font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-soft);margin-bottom:10px;
+  }
+  .deal-snapshot .tile .val{
+    font-family:var(--serif);font-size:26px;font-weight:600;
+    color:var(--navy);line-height:1;letter-spacing:-.02em;
+  }
+  .deal-snapshot .tile .sub{font-size:11.5px;color:var(--ink-soft);margin-top:6px}
+
+  /* ---------------- TENANT CREDIT CARDS ---------------- */
+  .tenant-credit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:36px}
+  .tc-card{
+    background:#fff;border:1px solid var(--line-dark);
+    padding:26px 28px;border-radius:var(--radius);
+  }
+  .tc-card .hdr{
+    display:flex;justify-content:space-between;align-items:flex-start;
+    gap:14px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--line-dark);
+  }
+  .tc-card h4{font-family:var(--serif);font-size:19px;color:var(--ink);margin:0 0 4px}
+  .tc-card .classify{
+    font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:700;padding:4px 10px;border-radius:4px;white-space:nowrap;
+    background:var(--gold-soft);color:var(--gold);
+  }
+  .tc-card .classify.public{background:#E7F4EC;color:#1F6B3F}
+  .tc-card .classify.private{background:#EEF2F7;color:#4B5568}
+  .tc-card p{font-size:14px;line-height:1.65;color:var(--ink-soft);margin:0 0 12px}
+  .tc-card ul{list-style:none;margin:0;padding:0;font-size:13.5px}
+  .tc-card ul li{display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid var(--line-dark)}
+  .tc-card ul li:first-child{border-top:0;padding-top:0}
+  .tc-card ul li span:first-child{color:var(--ink-soft)}
+  .tc-card ul li span:last-child{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+
+  /* ---------------- ROLLOVER SCHEDULE ---------------- */
+  .rollover-schedule{margin-top:28px}
+  .rollover-schedule .data-table tbody td:first-child{text-align:left}
+  .rollover-schedule .risk-high{color:#B05A3C;font-weight:700}
+  .rollover-schedule .risk-med{color:#C58A3A;font-weight:700}
+  .rollover-schedule .risk-low{color:#2F7A4A;font-weight:700}
+
+  /* ---------------- SUBMARKET STATS ---------------- */
+  .submarket-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+  .sm-tile{
+    background:var(--navy-2);border:1px solid var(--line);
+    padding:28px 22px;border-radius:var(--radius);color:#fff;
+  }
+  .sm-tile .lbl{
+    font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:rgba(255,255,255,.62);margin-bottom:12px;font-weight:600;
+  }
+  .sm-tile .val{
+    font-family:var(--serif);font-size:28px;font-weight:600;
+    color:var(--gold);line-height:1.05;letter-spacing:-.02em;
+  }
+  .sm-tile .sub{font-size:12px;color:rgba(255,255,255,.58);margin-top:8px;line-height:1.5}
+  .comp-note{color:rgba(255,255,255,.62);font-size:12px;line-height:1.6;margin-top:22px;max-width:920px}
+
+  /* ---------------- SENSITIVITY TABLE ---------------- */
+  .sensitivity-wrap{
+    background:#fff;border:1px solid var(--line-dark);
+    border-radius:var(--radius-lg);padding:32px;margin-top:38px;
+    box-shadow:var(--shadow-soft);
+  }
+  .sensitivity-wrap h3{color:var(--ink);font-size:18px;margin-bottom:6px;letter-spacing:-.01em}
+  .sensitivity-wrap .sub{color:var(--ink-soft);font-size:13px;margin-bottom:20px}
+  .sensitivity-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+  .sensitivity-table th,.sensitivity-table td{
+    padding:14px 10px;text-align:center;font-size:14px;
+    border:1px solid var(--line-dark);
+  }
+  .sensitivity-table thead th{
+    background:var(--navy);color:#fff;font-weight:600;font-size:12px;
+    letter-spacing:.12em;text-transform:uppercase;
+  }
+  .sensitivity-table tbody th{
+    background:var(--light-2);color:var(--ink);font-weight:600;
+    text-align:left;padding-left:18px;font-size:12.5px;letter-spacing:.08em;
+  }
+  .sensitivity-table .base{background:rgba(199,145,107,.12);font-weight:700;color:var(--navy)}
+  .sensitivity-table .downside{color:#8E4B34}
+  .sensitivity-table .upside{color:#2F7A4A}
+
+  /* ---------------- CAPEX PLAN ---------------- */
+  .capex-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;margin-top:24px}
+  .capex-card{
+    background:#fff;border:1px solid var(--line-dark);
+    padding:32px;border-radius:var(--radius);
+  }
+  .capex-card h3{color:var(--ink);font-size:18px;margin-bottom:18px}
+  .capex-list{list-style:none;padding:0;margin:0}
+  .capex-list li{
+    display:grid;grid-template-columns:180px 1fr auto;gap:20px;
+    padding:16px 0;border-top:1px solid var(--line-dark);
+    font-size:14.5px;align-items:start;
+  }
+  .capex-list li:first-child{border-top:0;padding-top:0}
+  .capex-list .when{
+    color:var(--gold);font-weight:700;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;padding-top:3px;
+  }
+  .capex-list .what{color:var(--ink)}
+  .capex-list .what b{display:block;font-weight:600;margin-bottom:4px}
+  .capex-list .what span{color:var(--ink-soft);font-size:13px;line-height:1.55}
+  .capex-list .amt{color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+  .capex-total{
+    display:flex;justify-content:space-between;align-items:center;
+    margin-top:22px;padding-top:22px;border-top:2px solid var(--ink);
+    font-family:var(--serif);font-size:18px;color:var(--ink);font-weight:600;
+  }
+  .capex-total b{color:var(--gold);font-size:24px;font-variant-numeric:tabular-nums}
+
+  /* ---------------- FEES & PROMOTE ---------------- */
+  .fees-card{
+    background:var(--navy-2);color:#fff;
+    border:1px solid var(--gold-line);border-radius:var(--radius-lg);
+    padding:36px;margin-top:28px;
+  }
+  .fees-card .hdr-row{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:26px;flex-wrap:wrap}
+  .fees-card h3{font-family:var(--serif);color:#fff;font-size:22px;margin:0}
+  .fees-card .hdr-row p{color:rgba(255,255,255,.7);font-size:13.5px;margin:0;max-width:520px}
+  .fees-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 36px}
+  .fees-grid .row{
+    display:flex;justify-content:space-between;gap:16px;padding:14px 0;
+    border-top:1px solid rgba(255,255,255,.1);font-size:14px;
+  }
+  .fees-grid .row:nth-child(-n+2){border-top:0}
+  .fees-grid .row span:first-child{color:rgba(255,255,255,.72)}
+  .fees-grid .row span:last-child{color:#fff;font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+  .waterfall{
+    margin-top:28px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);
+  }
+  .waterfall h4{font-family:var(--serif);color:#fff;font-size:16px;margin:0 0 14px}
+  .waterfall ol{margin:0;padding-left:22px;color:rgba(255,255,255,.85);font-size:13.5px;line-height:1.75}
+
+  /* ---------------- TRACK RECORD ---------------- */
+  .track-row{
+    background:#fff;border:1px solid var(--line-dark);
+    padding:28px;border-radius:var(--radius);margin-top:24px;
+  }
+  .track-row h3{color:var(--ink);font-size:18px;margin:0 0 14px}
+  .track-row p{color:var(--ink-soft);font-size:14.5px;line-height:1.7;margin:0 0 14px}
+
+  /* ---------------- RESPONSIVE ---------------- */
+  @media (max-width:1080px){
+    .cards-4{grid-template-columns:repeat(2,1fr)}
+    .stack-3{grid-template-columns:1fr 1fr}
+    .gallery-grid{grid-template-columns:repeat(3,1fr)}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .team-grid{grid-template-columns:1fr}
+    .split{grid-template-columns:1fr;gap:48px}
+    .split-gallery{max-width:720px}
+    .hero-stats{grid-template-columns:repeat(2,1fr);gap:28px}
+    .returns-grid{grid-template-columns:repeat(2,1fr)}
+    .calc-results{grid-template-columns:1fr}
+    .amount-picker{grid-template-columns:repeat(2,1fr)}
+    .deal-snapshot{grid-template-columns:repeat(3,1fr);gap:12px}
+    .submarket-grid{grid-template-columns:repeat(2,1fr)}
+    .capex-grid{grid-template-columns:1fr}
+    .tenant-credit-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:740px){
+    .nav-links,.nav-cta .login{display:none}
+    .nav-inner{padding:0 18px}
+    .container,.container-narrow{padding:0 20px}
+    .section{padding:80px 0}
+    .hero{padding:130px 0 70px;min-height:auto}
+    .hero-ctas{margin-bottom:48px}
+    .gallery-grid{grid-template-columns:repeat(2,1fr)}
+    .stack-3,.cards-4{grid-template-columns:1fr}
+    .timeline::before{left:18px}
+    .tl-item{grid-template-columns:1fr;padding-left:48px}
+    .tl-item:nth-child(even) .tl-card,
+    .tl-item:nth-child(even) .spacer{grid-column:auto}
+    .tl-item .spacer{display:none}
+    .tl-item::after{left:18px}
+    .team-card{grid-template-columns:1fr;text-align:center}
+    .team-card img{margin:0 auto}
+    .compare thead th,.compare tbody td{padding:14px 18px;font-size:13.5px}
+    .data-table thead th,.data-table tbody td{padding:14px 16px;font-size:13.5px}
+    .foot-grid{grid-template-columns:1fr;gap:32px}
+  }
+  /* Reveal animation */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* Staggered child reveals */
+  .reveal-child{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
+  .reveal-child.in{opacity:1;transform:none}
+
+  /* Sensitivity table row hover */
+  .sensitivity-table tbody tr{transition:background .2s ease}
+  .sensitivity-table tbody tr:hover{background:rgba(199,145,107,.08)}
+  .sensitivity-table tbody tr:hover td{color:var(--navy)}
+
+  /* Data-table row hover */
+  .data-table tbody tr{transition:background .2s ease}
+  .data-table tbody tr:hover{background:rgba(199,145,107,.06)}
+  .data-table a:hover{color:var(--gold)}
+
+  /* Card lift micro-interaction */
+  .tc-card{transition:transform .25s ease, box-shadow .25s ease, border-color .25s}
+  .tc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-soft);border-color:var(--gold-line)}
+
+  /* Return tile hover */
+  .return-tile{transition:transform .2s ease, box-shadow .2s ease, border-color .2s}
+  .return-tile:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.12);border-color:var(--gold-line)}
+
+  /* SM tile hover */
+  .sm-tile{transition:transform .2s ease, border-color .2s}
+  .sm-tile:hover{transform:translateY(-2px);border-color:rgba(199,145,107,.4)}
+
+  /* Hero stat number animated count */
+  .hero-stat-num{transition:color .3s}
+
+  /* Amount button active glow */
+  .amount-btn{transition:transform .15s ease, box-shadow .15s ease, background .2s, border-color .2s}
+  .amount-btn:hover:not(.active){transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.08)}
+
+  /* KPI tile pulse on update */
+  @keyframes kpiPulse{
+    0%{transform:scale(1)}
+    50%{transform:scale(1.03)}
+    100%{transform:scale(1)}
+  }
+  .kpi-tile.pulse .val{animation:kpiPulse .35s ease}
+
+  /* NOI chart fade-in */
+  @keyframes chartFadeIn{
+    from{opacity:0;transform:translateY(12px)}
+    to{opacity:1;transform:none}
+  }
+  .noi-chart-wrap.visible{animation:chartFadeIn .8s ease forwards}
+
+  /* ---- Additional mobile breakpoints ---- */
+  @media (max-width:540px){
+    .split-gallery{gap:10px}
+    .split-gallery .badge{left:14px;bottom:14px;padding:10px 14px;font-size:11px}
+    .split-gallery .photo-caption{left:10px;bottom:10px;padding:6px 10px;font-size:10px;letter-spacing:.1em}
+    .hero h1{font-size:clamp(32px,8vw,44px)}
+    .hero p.lead{font-size:15px}
+    .hero-ctas{gap:12px}
+    .hero-ctas .btn-rounded{width:100%;justify-content:center}
+    .hero-stats{grid-template-columns:1fr 1fr;gap:20px}
+    .hero-stat-num{font-size:28px}
+    .deal-snapshot{grid-template-columns:repeat(2,1fr);gap:10px;padding:20px}
+    .deal-snapshot .tile{border-right:0;border-bottom:1px solid var(--line-dark);padding-bottom:14px}
+    .deal-snapshot .tile:nth-last-child(-n+2){border-bottom:0}
+    .deal-snapshot .tile .val{font-size:20px}
+    .tenant-credit-grid{grid-template-columns:1fr}
+    .submarket-grid{grid-template-columns:1fr 1fr}
+    .capex-grid{grid-template-columns:1fr}
+    .capex-list li{grid-template-columns:1fr;gap:6px}
+    .capex-list .when{padding-top:0}
+    .capex-list .amt{text-align:left}
+    .fees-grid{grid-template-columns:1fr}
+    .fees-grid .row:nth-child(2){border-top:1px solid rgba(255,255,255,.1)}
+    .sensitivity-table th,.sensitivity-table td{padding:10px 6px;font-size:12px}
+    .sensitivity-wrap{padding:20px}
+    .calc-card{padding:20px}
+    .amount-picker{grid-template-columns:1fr 1fr}
+    .returns-grid{grid-template-columns:1fr 1fr}
+    .kpi-tile .val{font-size:22px}
+    .compare thead th,.compare tbody td{padding:10px 12px;font-size:12px}
+    .section{padding:64px 0}
+    .section-head{margin-bottom:44px}
+    .section-head h2{font-size:clamp(24px,6vw,30px)}
+    .section-head p{font-size:15px}
+  }
+  @media (max-width:380px){
+    .hero-stats{grid-template-columns:1fr;gap:16px}
+    .deal-snapshot{grid-template-columns:1fr}
+    .submarket-grid{grid-template-columns:1fr}
+    .amount-picker{grid-template-columns:1fr}
+    .returns-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============== SAMPLE-DEAL BANNER ============== -->
+<div class="private-banner" role="note" aria-label="Sample deal notice">
+  <b>Sample Investor Microsite</b><span class="sep">|</span>Live deal closed July 2025 &middot; Shown as a representative example of how Bluebird presents an offering to LPs &middot; Not a current offering of securities
+</div>
+
+<!-- ============== NAV ============== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="Bluebird Commercial Real Estate">
+      <img src="images/bluebird-logo.png" alt="Bluebird Commercial Real Estate" />
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#tenants">Tenants</a>
+      <a href="#inside">Inside</a>
+      <a href="#floorplans">Plans</a>
+      <a href="#submarket">Market</a>
+      <a href="#financials">Financials</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#team">Team</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://investors.appfolioim.com/bluebirdcre/investor/login" class="login" target="_blank" rel="noopener">Investor Login</a>
+      <a href="#contact" class="btn-pill">Invest With Us</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero" id="top">
+  <div class="hero-video-bg">
+    <video autoplay muted loop playsinline preload="metadata" poster="images/stag-aerial-hero.jpg">
+      <source src="video/stag-hero-loop.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-inner">
+    <div class="container">
+      <div class="hero-copy">
+        <div class="pill">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          St. Charles County, MO &nbsp;·&nbsp; Multi-Tenant Industrial Flex
+        </div>
+        <h1>201–215 Stag Industrial Blvd<span class="accent">St. Charles County Flex</span></h1>
+        <p class="lead">A 33,817 SF, 100% leased multi-tenant industrial flex acquisition in one of the St. Louis MSA's most supply-constrained submarkets — anchored by four national and regional tenants, with in-place rents 28% below market and a clear path to mark-to-market upside over a 5-year hold.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-rounded">See How We Present Deals <span aria-hidden="true">→</span></a>
+          <a href="#financials" class="btn-link">View Financials <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
+            <div>
+              <div class="hero-stat-num">33,817</div>
+              <div class="hero-stat-label">Square Feet</div>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-icon"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 7-7M14 7h7v7"/></svg></div>
+            <div>
+              <div class="hero-stat-num">14.0%</div>
+              <div class="hero-stat-label">Target LP IRR</div>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg></div>
+            <div>
+              <div class="hero-stat-num">5 yr</div>
+              <div class="hero-stat-label">Hold Period</div>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-icon"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <div>
+              <div class="hero-stat-num">1.84x</div>
+              <div class="hero-stat-label">Equity Multiple</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== EXEC SUMMARY (light) ============== -->
+<section class="section section-light reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Executive Summary</span>
+      <h2>An institutional-quality flex asset in a sub-1% vacancy submarket.</h2>
+      <p>Bluebird Commercial Real Estate acquired 201–215 Stag Industrial Blvd — a 33,817 SF, 100% leased multi-tenant industrial flex property in St. Charles County, Missouri — in July 2025 for a $3.60M purchase price ($106.46 PSF). The asset is anchored by four national and regional tenants on staggered leases, with in-place rents averaging $7.38 PSF NNN — a 28% discount to comparable submarket asking rents of $10.21 PSF. The 5-year business plan captures that gap through a disciplined renewal-and-roll strategy supported by sub-1% submarket vacancy and 5.4% historical rent growth.</p>
+    </div>
+    <div class="deal-snapshot" aria-label="Deal snapshot">
+      <div class="tile"><div class="lbl">Purchase Price</div><div class="val">$3.60M</div><div class="sub">$106.46 PSF</div></div>
+      <div class="tile"><div class="lbl">LP Equity</div><div class="val">$1.55M</div><div class="sub">~64% LTV senior debt</div></div>
+      <div class="tile"><div class="lbl">Target LP IRR</div><div class="val">14.0%</div><div class="sub">Net of fees &amp; promote</div></div>
+      <div class="tile"><div class="lbl">Equity Multiple</div><div class="val">1.84x</div><div class="sub">5-year hold</div></div>
+      <div class="tile"><div class="lbl">Going-In Cap</div><div class="val">6.93%</div><div class="sub">100% leased at close</div></div>
+    </div>
+    <p style="color:var(--ink-soft);font-size:12px;margin-top:14px;line-height:1.5;text-align:center">Target returns are forward-looking <b>estimates</b> from the underwriting at closing — not guarantees. Returns shown are net to limited partners after the 2.0% acquisition fee, 2.0% asset management fee on EGI, 2.0% disposition fee, 10% preferred return, and 95/5 split to pref then 80/20 thereafter as outlined in the Fees &amp; Promote section below.</p>
+  </div>
+</section>
+
+<!-- ============== INVESTMENT HIGHLIGHTS ============== -->
+<section class="section section-light reveal" id="highlights" style="padding-top:0">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Investment Highlights</span>
+      <h2>Why Stag</h2>
+      <p>Four reasons this asset offered compelling risk-adjusted returns at acquisition.</p>
+    </div>
+    <div class="cards-4">
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 7-7M14 7h7v7"/></svg></div>
+        <h3>28% Mark-to-Market Upside</h3>
+        <p>In-place rents average $7.38 PSF NNN versus comparable submarket asking rents of $10.21 PSF — a 28% gap captured through the rollover schedule over the hold.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13M9 21v-7h6v7"/></svg></div>
+        <h3>100% Leased to Diversified Roster</h3>
+        <p>Four national and regional tenants — including a publicly-traded electrical-distribution subsidiary — with no single tenant exceeding 30% of the building.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <h3>Sub-1% Submarket Vacancy</h3>
+        <p>St. Charles County is one of the tightest flex submarkets in the St. Louis MSA — sub-1% vacancy in buildings under 50,000 SF, only 61,000 SF currently under construction (vs. 550,000 SF 10-year average).</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg></div>
+        <h3>Near-Term Value-Creation Window</h3>
+        <p>WALT of 1.71 years at acquisition is a feature, not a flaw — three of four leases roll inside 24 months, accelerating the path to capturing market rent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== DRONE VIDEO BREAK ============== -->
+<section class="video-break reveal">
+  <div class="video-break-inner">
+    <video id="droneVideoBreak" muted playsinline preload="metadata" poster="images/stag-aerial-hero.jpg">
+      <source src="video/stag-aerial-detail.mp4" type="video/mp4">
+    </video>
+    <div class="video-break-overlay"></div>
+    <div class="video-controls" id="droneVideoControls" onclick="toggleDroneVideo(this)">
+      <div class="big-play">
+        <svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+      </div>
+    </div>
+    <div class="video-break-caption">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div>
+      <span>Aerial Drone Footage &mdash; 201–215 Stag Industrial Blvd</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROPERTY OVERVIEW (dark split) ============== -->
+<section class="section section-navy reveal" id="overview">
+  <div class="container">
+    <div class="split">
+      <div class="split-gallery">
+        <div class="hero-photo">
+          <img src="images/stag-aerial-front.jpg" alt="Aerial view of the front facade of 201–215 Stag Industrial Blvd" loading="lazy" />
+          <div class="badge">St. Charles County, MO</div>
+        </div>
+        <div class="sub-photo">
+          <img src="images/stag-aerial-context.jpg" alt="Wide aerial of Stag Industrial in its industrial park context" loading="lazy" />
+          <div class="photo-caption">Industrial Park Context</div>
+        </div>
+        <div class="sub-photo">
+          <img src="images/stag-loading-docks.jpg" alt="Rear loading area at Stag Industrial showing all 8 dock-high doors" loading="lazy" />
+          <div class="photo-caption">8 Dock-High Doors</div>
+        </div>
+        <div class="sub-photo wide">
+          <img src="images/stag-front-wide.jpg" alt="Wide front view of 201–215 Stag Industrial Blvd showing full parking and building footprint" loading="lazy" />
+          <div class="photo-caption">Front Facade &amp; Parking</div>
+        </div>
+        <div class="sub-photo">
+          <img src="images/stag-loading-with-truck.jpg" alt="Aerial close-up of rear loading apron at Stag Industrial with truck at dock" loading="lazy" />
+          <div class="photo-caption">Operational Loading</div>
+        </div>
+        <div class="sub-photo">
+          <img src="images/stag-aerial-side.jpg" alt="Side aerial of Stag Industrial showing road frontage and surroundings" loading="lazy" />
+          <div class="photo-caption">Road Frontage</div>
+        </div>
+        <div class="split-video" onclick="toggleSplitVideo(this)">
+          <video muted playsinline preload="metadata" poster="images/stag-aerial-hero.jpg">
+            <source src="video/stag-aerial-detail.mp4" type="video/mp4">
+          </video>
+          <div class="video-break-overlay"></div>
+          <div class="video-controls">
+            <div class="big-play"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div>
+          </div>
+          <div class="video-break-caption">
+            <div class="play-icon"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div>
+            <span>Drone Flyover</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="section-eyebrow">Property Overview</span>
+        <h2>201–215 Stag Industrial Blvd</h2>
+        <p style="color:rgba(255,255,255,.78);font-size:16px;margin-top:18px">A 33,817 SF concrete tilt-up flex building (referred to in the appraisal as "Hawk Ridge Industrial Flex") delivered in 2002, with a 70% office finish, 21' clear height, dedicated dock-high and drive-in loading, and 3.47 / 1,000 SF parking — well above market — situated on 3.17 acres in the St. Charles County flex submarket.</p>
+        <table class="detail-table">
+          <tr><td>Address</td><td>201–215 Stag Industrial Blvd, Lake St. Louis, MO 63367</td></tr>
+          <tr><td>Submarket</td><td>St. Charles County (St. Louis MSA)</td></tr>
+          <tr><td>Asset Type</td><td>Multi-Tenant Industrial Flex</td></tr>
+          <tr><td>Total Building Area</td><td>33,817 SF</td></tr>
+          <tr><td>Office Finish</td><td>~70% (per CBRE appraisal)</td></tr>
+          <tr><td>Land Area</td><td>3.17 acres</td></tr>
+          <tr><td>Year Built</td><td>2002</td></tr>
+          <tr><td>Clear Height</td><td>21'</td></tr>
+          <tr><td>Loading</td><td>8 dock-high (9'×10') with levelers; 4 drive-in (12'×14')</td></tr>
+          <tr><td>Parking</td><td>118 surface spaces (3.47 / 1,000 SF)</td></tr>
+          <tr><td>Construction</td><td>Concrete tilt-up</td></tr>
+          <tr><td>Power</td><td>1,200 AMP / 3-Phase</td></tr>
+          <tr><td>Sprinklers</td><td>Wet</td></tr>
+          <tr><td>Zoning</td><td>Industrial (I)</td></tr>
+          <tr><td>Occupancy at Closing</td><td>100%</td></tr>
+          <tr><td>Number of Tenants</td><td>4</td></tr>
+          <tr><td>Weighted Avg. Lease Term</td><td>~1.71 years at acquisition</td></tr>
+        </table>
+        <p style="color:rgba(255,255,255,.65);font-size:12px;margin-top:14px;line-height:1.5">Physical specifications confirmed via CBRE appraisal (June 2025), ALTA survey, Phase I ESA, and the executed PSA. Building area is consistent across the IM, OM, appraisal, and recorded survey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TENANT SUMMARY (light) ============== -->
+<section class="section section-light reveal" id="tenants">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Tenant Summary</span>
+      <h2>Four diversified tenants. Built-in rollover catalyst.</h2>
+      <p>The rent roll is intentionally diversified — AllCom Global Services, the largest tenant, accounts for just 30% of the building. The 1.71-year WALT is a feature: three of four leases roll inside 24 months, accelerating the path to capturing the 28% gap between in-place and market rents.</p>
+    </div>
+    <div style="overflow-x:auto">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Tenant</th>
+            <th>Suite</th>
+            <th>SF</th>
+            <th>% of Bldg</th>
+            <th>Base Rent PSF (NNN)</th>
+            <th>Lease Expires</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>AllCom Global Services, Inc.</td><td>201</td><td>10,155</td><td>30.0%</td><td>$7.50</td><td>Apr 2026</td></tr>
+          <tr><td>Rexel USA, Inc.</td><td>209 &amp; 211</td><td>8,832</td><td>26.1%</td><td>$7.65</td><td>Mar 2028</td></tr>
+          <tr><td>Lab Storage Systems, Inc.</td><td>213–215</td><td>8,309</td><td>24.6%</td><td>$6.25</td><td>Feb 2027</td></tr>
+          <tr><td>U.S. Fabric Solutions, LLC</td><td>205 &amp; 207</td><td>6,521</td><td>19.3%</td><td>$8.25</td><td>Apr 2026</td></tr>
+        </tbody>
+      </table>
+      <p style="color:var(--ink-soft);font-size:12px;margin-top:10px;line-height:1.5">Source: rent roll at acquisition (July 2025). Rents shown are in-place contractual base rent (NNN), excluding CAM reimbursements. All four leases include contractual annual escalations; weighted-average in-place rent is $7.38 PSF NNN versus comparable submarket asking rents of $10.21 PSF (~28% mark-to-market gap). The UW model assumes 75% renewal probability, 6 months downtime between tenants, and 3 months free rent on new leases.</p>
+    </div>
+
+    <!-- Tenant Credit Snapshot -->
+    <h3 style="text-align:center;color:var(--ink);margin-top:60px;margin-bottom:8px;font-size:24px">Tenant Credit Snapshot</h3>
+    <p style="text-align:center;color:var(--ink-soft);font-size:14px;max-width:640px;margin:0 auto 8px">Brief credit and business profile for each tenant. Lease abstracts and full financial disclosures are included in the investor data room.</p>
+    <div class="tenant-credit-grid">
+      <div class="tc-card">
+        <div class="hdr">
+          <div>
+            <h4>AllCom Global Services, Inc.</h4>
+            <p style="margin:0;font-size:12.5px;color:var(--ink-soft)">Suite 201 &middot; 10,155 SF (30.0% of building)</p>
+          </div>
+          <span class="classify private">Private · Missouri Corp.</span>
+        </div>
+        <p>IT and network-infrastructure integrator providing engineers, project managers, and installers for enterprise and government clients. Uses the Stag space as its regional staging and project-deployment hub.</p>
+        <ul>
+          <li><span>Ownership</span><span>Privately held (MO)</span></li>
+          <li><span>Lease Term Remaining</span><span>~0.8 yrs (exp. Apr 2026)</span></li>
+          <li><span>Guarantor</span><span>Corporate</span></li>
+          <li><span>In-Place Rent</span><span>$7.50 PSF NNN</span></li>
+          <li><span>Renewal Strategy</span><span>Active negotiation; market rent ~$10.00+</span></li>
+        </ul>
+      </div>
+      <div class="tc-card">
+        <div class="hdr">
+          <div>
+            <h4>Rexel USA, Inc.</h4>
+            <p style="margin:0;font-size:12.5px;color:var(--ink-soft)">Suites 209 &amp; 211 &middot; 8,832 SF (26.1% of building)</p>
+          </div>
+          <span class="classify public">Public Parent · EPA: RXL</span>
+        </div>
+        <p>U.S. subsidiary of Rexel Group (Euronext Paris: RXL) — a global electrical-distribution leader operating 400+ branches across the U.S. with corporate headquarters in Dallas, TX. The Stag location serves as a regional distribution branch.</p>
+        <ul>
+          <li><span>Parent</span><span>Rexel S.A. (Euronext Paris: RXL)</span></li>
+          <li><span>Lease Term Remaining</span><span>~2.7 yrs (exp. Mar 2028)</span></li>
+          <li><span>Renewal Options</span><span>Two 3-yr options at lesser of 95% FMV or 102% prior rent</span></li>
+          <li><span>Guarantor</span><span>Corporate</span></li>
+          <li><span>In-Place Rent</span><span>$7.65 PSF NNN</span></li>
+        </ul>
+      </div>
+      <div class="tc-card">
+        <div class="hdr">
+          <div>
+            <h4>Lab Storage Systems, Inc.</h4>
+            <p style="margin:0;font-size:12.5px;color:var(--ink-soft)">Suites 213–215 &middot; 8,309 SF (24.6% of building)</p>
+          </div>
+          <span class="classify private">Private · Est. 1979</span>
+        </div>
+        <p>Designer and manufacturer of laboratory storage systems for anatomic pathology — a 45+ year operator serving hospital and reference labs. Capital-intensive build-out and specialized HVAC make this tenant structurally sticky at this location.</p>
+        <ul>
+          <li><span>Ownership</span><span>Privately held</span></li>
+          <li><span>Years at Property</span><span>8+ yrs</span></li>
+          <li><span>Lease Term Remaining</span><span>~1.6 yrs (exp. Feb 2027)</span></li>
+          <li><span>Guarantor</span><span>Corporate</span></li>
+          <li><span>In-Place Rent</span><span>$6.25 PSF NNN (flat)</span></li>
+        </ul>
+      </div>
+      <div class="tc-card">
+        <div class="hdr">
+          <div>
+            <h4>U.S. Fabric Solutions, LLC</h4>
+            <p style="margin:0;font-size:12.5px;color:var(--ink-soft)">Suites 205 &amp; 207 &middot; 6,521 SF (19.3% of building)</p>
+          </div>
+          <span class="classify private">Private · Family-Owned</span>
+        </div>
+        <p>Family-owned discount home-decor retailer and wholesaler (operates as HouseFabric.com) — upholstery, drapery, and outdoor fabric product lines. Holds a ROFR on adjacent suites and an option to purchase the building.</p>
+        <ul>
+          <li><span>Ownership</span><span>Privately held</span></li>
+          <li><span>Lease Term Remaining</span><span>~0.8 yrs (exp. Apr 2026)</span></li>
+          <li><span>Renewal Options</span><span>One 5-yr option at market</span></li>
+          <li><span>Guarantor</span><span>Corporate + Personal (Williams)</span></li>
+          <li><span>In-Place Rent</span><span>$8.25 PSF NNN</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Rollover Risk Schedule -->
+    <h3 style="text-align:center;color:var(--ink);margin-top:60px;margin-bottom:8px;font-size:24px">Rollover Risk Schedule</h3>
+    <p style="text-align:center;color:var(--ink-soft);font-size:14px;max-width:720px;margin:0 auto 20px">WALT of 1.71 years at acquisition means three of four leases roll inside 24 months — a feature, not a flaw, that accelerates the path to mark-to-market. The schedule below shows each rollover event, the % of building at risk, and the UW model assumption.</p>
+    <div class="rollover-schedule" style="overflow-x:auto">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Tenant</th>
+            <th>SF</th>
+            <th>% of Building</th>
+            <th>% of Y1 NOI</th>
+            <th>Model Assumption</th>
+            <th>Risk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2026</td><td>AllCom Global Services</td><td>10,155</td><td>30.0%</td><td>~31%</td><td>75% renewal · ~$9.50 PSF · 6-mo downtime</td><td class="risk-med">Moderate</td></tr>
+          <tr><td>2026</td><td>U.S. Fabric Solutions</td><td>6,521</td><td>19.3%</td><td>~22%</td><td>75% renewal · ~$9.50 PSF · 6-mo downtime</td><td class="risk-med">Moderate</td></tr>
+          <tr><td>2027</td><td>Lab Storage Systems</td><td>8,309</td><td>24.6%</td><td>~21%</td><td>75% renewal · ~$8.50 PSF · 6-mo downtime</td><td class="risk-low">Low (sticky tenant)</td></tr>
+          <tr><td>2028</td><td>Rexel USA</td><td>8,832</td><td>26.1%</td><td>~26%</td><td>Two 3-yr renewal options at market · 0-mo downtime</td><td class="risk-low">Low (option)</td></tr>
+        </tbody>
+      </table>
+      <p style="color:var(--ink-soft);font-size:12px;margin-top:14px;line-height:1.55">Re-leasing rents, downtime, TI/LC, and renewal probabilities are <b>estimates</b> from the underwriting model. UW assumptions: 75% renewal probability, 6 months downtime between tenants, 3 months free rent (new) / 0 months (renewals), TI of $7.00 PSF (new) / $1.00 PSF (renewal), LCs of 7.5% (new) / 4.0% (renewal). The model probability-weights renewal vs. re-lease scenarios per tenant.</p>
+    </div>
+
+    <!-- Rollover stacking bar visual -->
+    <div class="rollover">
+      <div class="rollover-bar">
+        <div class="rollover-seg" style="flex:0.300;background:#C7916B">2026 (AllCom)</div>
+        <div class="rollover-seg" style="flex:0.193;background:#A87854">2026 (USFS)</div>
+        <div class="rollover-seg" style="flex:0.246;background:#8E6443">2027 (LSS)</div>
+        <div class="rollover-seg" style="flex:0.261;background:#6E4C34">2028 (Rexel)</div>
+      </div>
+      <div class="rollover-legend">
+        <span><i style="background:#C7916B"></i>AllCom Global · 30.0%</span>
+        <span><i style="background:#A87854"></i>U.S. Fabric · 19.3%</span>
+        <span><i style="background:#8E6443"></i>Lab Storage · 24.6%</span>
+        <span><i style="background:#6E4C34"></i>Rexel USA · 26.1%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== INSIDE THE BUILDING (light) ============== -->
+<section class="section section-light reveal" id="inside">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Inside the Building</span>
+      <h2>A real, occupied, operating asset.</h2>
+      <p>On-site interior photography from April 2025 due diligence — Rexel's electrical-distribution branch, U.S. Fabric Solutions' showroom, and AllCom's network &amp; staging operations. Diversified tenant uses, capital-intensive build-outs, and signs of long-term occupancy across all four suites.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px">
+      <figure style="margin:0;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:4/3;position:relative">
+        <img src="images/stag-interior-rexel-showroom.jpg" alt="Rexel USA showroom and conference space at 201–215 Stag Industrial Blvd" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+        <figcaption style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;padding:30px 16px 12px;font-size:13px;font-weight:600">Rexel USA &middot; Showroom &amp; Conf.</figcaption>
+      </figure>
+      <figure style="margin:0;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:4/3;position:relative">
+        <img src="images/stag-interior-rexel-warehouse.jpg" alt="Rexel USA warehouse pallet racking with safety signage" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+        <figcaption style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;padding:30px 16px 12px;font-size:13px;font-weight:600">Rexel USA &middot; Warehouse</figcaption>
+      </figure>
+      <figure style="margin:0;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:4/3;position:relative">
+        <img src="images/stag-interior-usfabric.jpg" alt="U.S. Fabric Solutions retail showroom with fabric inventory" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+        <figcaption style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;padding:30px 16px 12px;font-size:13px;font-weight:600">U.S. Fabric Solutions &middot; Showroom</figcaption>
+      </figure>
+      <figure style="margin:0;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:4/3;position:relative">
+        <img src="images/stag-interior-warehouse.jpg" alt="Active warehouse space with forklift, pallet racking and inventory" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+        <figcaption style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;padding:30px 16px 12px;font-size:13px;font-weight:600">Active Warehouse Use</figcaption>
+      </figure>
+      <figure style="margin:0;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:4/3;position:relative">
+        <img src="images/stag-interior-electrical.jpg" alt="Electrical and network infrastructure room serving AllCom Global Services tenant build-out" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+        <figcaption style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;padding:30px 16px 12px;font-size:13px;font-weight:600">AllCom &middot; Network Infrastructure</figcaption>
+      </figure>
+      <figure style="margin:0;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:4/3;position:relative">
+        <img src="images/stag-interior-office.jpg" alt="Tenant office build-out with cubicles and workstations" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+        <figcaption style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;padding:30px 16px 12px;font-size:13px;font-weight:600">Office Build-Out (~70%)</figcaption>
+      </figure>
+    </div>
+    <p style="color:var(--ink-soft);font-size:12px;margin-top:18px;line-height:1.55;text-align:center">Photography from April 2025 on-site walk-through with each tenant. Capital-intensive build-outs (Rexel showroom, AllCom network gear, U.S. Fabric retail floor) make these tenants structurally sticky &mdash; relocating costs them more than renewing.</p>
+  </div>
+</section>
+
+<!-- ============== FLOOR PLANS (light) ============== -->
+<section class="section section-light reveal" id="floorplans" style="padding-top:0">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Floor Plans</span>
+      <h2>Four suites, demising-wall flexibility.</h2>
+      <p>The building was originally designed and demised for four tenants ranging from ~6,500 to ~10,200 SF — a sweet spot for the kind of regional service, light-industrial, and distribution users that drive demand in the St. Charles flex submarket. Every demising wall sits on a structural grid line, so combining or splitting suites at lease rollover is straightforward.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr;gap:18px;margin-top:36px;max-width:1100px;margin-left:auto;margin-right:auto">
+      <figure style="margin:0;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line-dark);box-shadow:var(--shadow-soft)">
+        <img src="images/stag-floor-plan.jpg" alt="201–215 Stag Industrial Blvd floor plan showing four suites and dock-high loading layout" loading="lazy" style="width:100%;height:auto;display:block" />
+        <figcaption style="padding:14px 20px;font-size:13px;color:var(--ink-soft);border-top:1px solid var(--line-dark);background:var(--light-2)">As-built floor plan (2014 edition) — four demised suites totaling 33,817 SF, eight rear dock-high doors with levelers, four drive-in doors. Source: building plans on file with Bluebird.</figcaption>
+      </figure>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px">
+      <div style="padding:18px 20px;background:#fff;border:1px solid var(--line-dark);border-radius:12px">
+        <div style="font-size:11px;color:var(--ink-soft);font-weight:700;letter-spacing:.16em;text-transform:uppercase">Suite 201</div>
+        <div style="font-family:var(--serif);font-size:24px;color:var(--ink);margin-top:4px">10,155 SF</div>
+        <div style="font-size:13px;color:var(--ink-soft);margin-top:4px">AllCom Global Services</div>
+      </div>
+      <div style="padding:18px 20px;background:#fff;border:1px solid var(--line-dark);border-radius:12px">
+        <div style="font-size:11px;color:var(--ink-soft);font-weight:700;letter-spacing:.16em;text-transform:uppercase">Suites 205 &amp; 207</div>
+        <div style="font-family:var(--serif);font-size:24px;color:var(--ink);margin-top:4px">6,521 SF</div>
+        <div style="font-size:13px;color:var(--ink-soft);margin-top:4px">U.S. Fabric Solutions</div>
+      </div>
+      <div style="padding:18px 20px;background:#fff;border:1px solid var(--line-dark);border-radius:12px">
+        <div style="font-size:11px;color:var(--ink-soft);font-weight:700;letter-spacing:.16em;text-transform:uppercase">Suites 209 &amp; 211</div>
+        <div style="font-family:var(--serif);font-size:24px;color:var(--ink);margin-top:4px">8,832 SF</div>
+        <div style="font-size:13px;color:var(--ink-soft);margin-top:4px">Rexel USA</div>
+      </div>
+      <div style="padding:18px 20px;background:#fff;border:1px solid var(--line-dark);border-radius:12px">
+        <div style="font-size:11px;color:var(--ink-soft);font-weight:700;letter-spacing:.16em;text-transform:uppercase">Suites 213–215</div>
+        <div style="font-family:var(--serif);font-size:24px;color:var(--ink);margin-top:4px">8,309 SF</div>
+        <div style="font-size:13px;color:var(--ink-soft);margin-top:4px">Lab Storage Systems</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SUBMARKET (navy) ============== -->
+<section class="section section-navy reveal" id="submarket">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">St. Charles County Submarket</span>
+      <h2>One of the most supply-constrained flex submarkets in the St. Louis MSA.</h2>
+      <p>St. Charles County is a 419,000-resident, 16%-population-growth-since-2010 corridor between Lambert International Airport and the I-70 / I-64 nodes. The county is anchored by major employers including General Motors, Boeing, MasterCard, and Amazon. New flex development has slowed dramatically — only 61,000 SF currently under construction versus the 10-year average of 550,000 SF — with sub-1% vacancy in product under 50,000 SF.</p>
+    </div>
+    <div class="submarket-grid">
+      <div class="sm-tile"><div class="lbl">Submarket Vacancy</div><div class="val">0.5%</div><div class="sub">Flex &lt; 50,000 SF · per IM</div></div>
+      <div class="sm-tile"><div class="lbl">Avg Asking Rent (NNN)</div><div class="val">$10.21</div><div class="sub">5 directly comparable comps</div></div>
+      <div class="sm-tile"><div class="lbl">5-Yr Rent Growth</div><div class="val">+5.4%</div><div class="sub">St. Charles County avg/yr</div></div>
+      <div class="sm-tile"><div class="lbl">In-Place vs Market</div><div class="val">-28%</div><div class="sub">$7.38 in-place vs $10.21 market</div></div>
+    </div>
+    <h3 style="color:#fff;margin-top:56px;margin-bottom:18px;font-size:22px">Submarket Lease Comparables (NNN)</h3>
+    <div class="compare" style="margin-bottom:8px">
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>SF</th>
+            <th>Asking Rent</th>
+            <th>vs. Stag In-Place</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="text-align:left">4013 Old Hwy 94 S &middot; St. Charles County</td><td>6,250</td><td>$12.00</td><td class="yes">+62.6%</td></tr>
+          <tr><td style="text-align:left">1100 Pralle Ln &middot; St. Charles County</td><td>8,400</td><td>$12.00</td><td class="yes">+62.6%</td></tr>
+          <tr><td style="text-align:left">3080 Elm Point Industrial Dr &middot; St. Charles County</td><td>15,120</td><td>$8.50</td><td class="yes">+15.2%</td></tr>
+          <tr><td style="text-align:left">3896 Fountain Lakes Pkwy &middot; St. Charles County</td><td>10,725</td><td>$9.50</td><td class="yes">+28.7%</td></tr>
+          <tr><td style="text-align:left">3355 E Terra Ln &middot; St. Charles County</td><td>6,000</td><td>$10.50</td><td class="yes">+42.3%</td></tr>
+          <tr style="background:rgba(199,145,107,.08)"><td style="text-align:left"><b>201–215 Stag Industrial Blvd (Subject — In-Place)</b></td><td>33,817</td><td class="yes"><b>$7.38 wtd avg</b></td><td>—</td></tr>
+          <tr style="background:rgba(199,145,107,.08)"><td style="text-align:left"><b>Comparable Average Asking Rent</b></td><td>—</td><td class="yes"><b>$10.21</b></td><td class="yes"><b>+38.3%</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="comp-note">Submarket statistics from the IM (sourced from CoStar and broker comp sets at acquisition). Comparable lease comps reflect direct submarket transactions in St. Charles County flex product under 16,000 SF. The 28% in-place-to-market gap is the central driver of the 5-year value-creation thesis.</p>
+
+  </div>
+</section>
+
+<!-- ============== FINANCIALS (light) ============== -->
+<section class="section section-light reveal" id="financials">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Financial Performance</span>
+      <h2>Projected NOI &amp; Returns</h2>
+      <p>5-year hold underwriting from the V3 Base Case model used at acquisition. Assumptions reflect 75% renewal probability, 6 months downtime between tenants, 3 months free rent on new leases, 3.0% annual rent escalations, 2.5% expense growth, and a 7.45% terminal cap exit in mid-2030.</p>
+    </div>
+    <div class="chart-card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:8px;margin-bottom:18px">
+        <div>
+          <h3 style="margin:0 0 4px;color:var(--ink)">Net Operating Income</h3>
+          <div style="font-size:13px;color:var(--ink-soft)">5-year forecast (Years 1–5, Jul-2025 → Jun-2030)</div>
+        </div>
+        <div style="font-size:11px;color:var(--ink-soft);letter-spacing:.18em;text-transform:uppercase;font-weight:600">USD per year</div>
+      </div>
+      <div class="chart-wrap noi-chart-wrap"><canvas id="noiChart"></canvas></div>
+    </div>
+    <div class="returns-grid">
+      <div class="return-tile">
+        <div class="lbl">Projected LP IRR</div>
+        <div class="val">14.0%</div>
+      </div>
+      <div class="return-tile">
+        <div class="lbl">Equity Multiple</div>
+        <div class="val">1.84x</div>
+      </div>
+      <div class="return-tile">
+        <div class="lbl">Avg Cash-on-Cash</div>
+        <div class="val">~4.0%</div>
+      </div>
+      <div class="return-tile">
+        <div class="lbl">Going-In Cap Rate</div>
+        <div class="val">6.93%</div>
+      </div>
+    </div>
+    <p style="color:var(--ink-soft);font-size:12px;margin-top:22px;line-height:1.6;max-width:920px">NOI figures, return metrics, cash-on-cash yields, and cap rates shown are the <b>forward-looking estimates</b> from the V3 Base Case underwriting model used at acquisition (July 2025). They rely on assumptions about lease renewals, re-leasing rents, expense inflation, debt terms, and exit cap rate environment that may not be realized. Actual operating results and investor returns will differ from these estimates.</p>
+
+    <!-- Sensitivity Table -->
+    <div class="sensitivity-wrap">
+      <h3>Return Sensitivity</h3>
+      <div class="sub">Target LP IRR and Equity Multiple across a range of Year-5 terminal exit cap scenarios. Base case is shaded.</div>
+      <div style="overflow-x:auto">
+        <table class="sensitivity-table">
+          <thead>
+            <tr>
+              <th>Exit Cap</th>
+              <th>Gross Sale Price</th>
+              <th>LP IRR</th>
+              <th>LP EM</th>
+              <th>Δ IRR vs Base</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th>6.75% (Upside)</th><td class="upside">$5.44M</td><td class="upside">17.2%</td><td class="upside">2.06x</td><td class="upside">+320 bps</td></tr>
+            <tr><th>7.00%</th><td class="upside">$5.24M</td><td class="upside">16.0%</td><td class="upside">1.99x</td><td class="upside">+200 bps</td></tr>
+            <tr><th>7.25%</th><td class="upside">$5.06M</td><td class="upside">14.9%</td><td class="upside">1.92x</td><td class="upside">+90 bps</td></tr>
+            <tr><th>7.45% (Base)</th><td class="base">$4.93M</td><td class="base">14.0%</td><td class="base">1.84x</td><td class="base">—</td></tr>
+            <tr><th>7.75%</th><td>$4.73M</td><td>12.7%</td><td>1.75x</td><td>-130 bps</td></tr>
+            <tr><th>8.25%</th><td class="downside">$4.45M</td><td class="downside">10.5%</td><td class="downside">1.61x</td><td class="downside">-350 bps</td></tr>
+            <tr><th>8.75% (Downside)</th><td class="downside">$4.19M</td><td class="downside">8.4%</td><td class="downside">1.48x</td><td class="downside">-560 bps</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--ink-soft);font-size:12px;margin-top:18px;line-height:1.55">Sensitivity figures are <b>illustrative estimates</b> calibrated to the V3 Base Case ($1.55M LP equity, 14.0% target IRR / 1.84x EM at the 7.45% base exit cap). Each row holds NOI and debt assumptions constant and varies only the terminal cap. Additional sensitivities (rent growth, vacancy, TI/LC, hold extension) appear in the full underwriting package.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CAPITAL STRUCTURE (navy 2) ============== -->
+<section class="section section-navy-2 reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Capital Structure</span>
+      <h2>Sources &amp; Uses</h2>
+      <p>Financed with a 10-year fixed-rate first mortgage at 6.41% from TruStone Financial Credit Union (originated through Servion Commercial Loan Resources). Year 1 DSCR of 1.42x leaves cushion for the rollover-and-roll plan; LP equity of $1.55M was raised under a Reg D Rule 506(b) offering to accredited investors.</p>
+    </div>
+    <div class="stack-3">
+      <div class="panel">
+        <h3>Sources</h3>
+        <div class="sub">Total Capitalization</div>
+        <ul>
+          <li>Senior Loan (~64% LTV)<b>$2,300,000</b></li>
+          <li>LP Equity<b>$1,550,000</b></li>
+          <li style="border-top:2px solid var(--ink);padding-top:14px;margin-top:6px"><b>Total Sources</b><b>$3,850,000</b></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Uses</h3>
+        <div class="sub">Total Project Cost</div>
+        <ul>
+          <li>Purchase Price<b>$3,600,000</b></li>
+          <li>Acquisition Fee (2%)<b>$72,000</b></li>
+          <li>Closing Costs &amp; Reserves<b>$178,000</b></li>
+          <li style="border-top:2px solid var(--ink);padding-top:14px;margin-top:6px"><b>Total Uses</b><b>$3,850,000</b></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Debt Assumptions</h3>
+        <div class="sub">TruStone Financial Credit Union</div>
+        <ul>
+          <li>Loan Amount<b>$2,300,000</b></li>
+          <li>LTV / LTC<b>~64% / ~60%</b></li>
+          <li>Rate<b>6.41% Fixed</b></li>
+          <li>Term<b>10 Years</b></li>
+          <li>Amortization<b>30 Years</b></li>
+          <li>I/O Period<b>None</b></li>
+          <li>Monthly P&amp;I<b>$14,531</b></li>
+          <li>Year 1 DSCR<b>1.42x</b></li>
+        </ul>
+      </div>
+    </div>
+    <p style="color:rgba(255,255,255,.65);font-size:12px;margin-top:22px;line-height:1.6;max-width:920px">Sources &amp; uses, loan terms, and DSCR figures reflect the actual closing terms (July 2025) per the executed PSA and TruStone Financial Credit Union loan documents. Acquisition fee was paid one-time at close to the sponsor.</p>
+
+    <!-- Fees & Promote -->
+    <div class="fees-card" id="fees">
+      <div class="hdr-row">
+        <h3>Fees &amp; Promote Structure</h3>
+        <p>Fees are fully disclosed below and already reflected in the net-to-LP return figures shown throughout this page. Full fee schedule and distribution waterfall are defined in the Operating Agreement of Bluebird Stag, LLC.</p>
+      </div>
+      <div class="fees-grid">
+        <div class="row"><span>Acquisition Fee</span><span>2.00% of purchase price ($72,000) &middot; one-time at close</span></div>
+        <div class="row"><span>Asset Management Fee</span><span>2.00% of Effective Gross Income (EGI) &middot; annual</span></div>
+        <div class="row"><span>Disposition Fee</span><span>2.00% of gross sale price &middot; at exit</span></div>
+        <div class="row"><span>Preferred Return</span><span>10.0% LP preferred return &middot; cumulative, non-compounding</span></div>
+      </div>
+      <div class="waterfall">
+        <h4>Distribution Waterfall (operating &amp; sale)</h4>
+        <ol>
+          <li><b>Pro rata to LP/GP up to the 10% preferred return</b> — 95% to LPs / 5% to Sponsor (GP).</li>
+          <li><b>Thereafter</b> — 80% to LPs / 20% to Sponsor (GP) pro rata on all remaining distributable cash, including sale proceeds.</li>
+          <li>No catch-up. The 10% pref + 80/20 split structure aligns sponsor compensation with delivering above-pref returns to LPs.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== INVESTOR CALCULATOR (light) ============== -->
+<section class="section section-light reveal" id="calculator">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Investor Illustration</span>
+      <h2>What would your investment look like?</h2>
+      <p>Select an investment size to preview projected LP cash flows, return of capital, and profit over the 5-year hold. Distributions are pro-rata against the $1,550,000 total LP equity raise. Minimum investment in the actual offering was $5,000 under Reg D Rule 506(b).</p>
+    </div>
+    <div class="calc-card">
+      <div class="amount-picker" id="amountPicker">
+        <button class="amount-btn active" data-amount="25000">$25K<span class="sub">Investment</span></button>
+        <button class="amount-btn" data-amount="50000">$50K<span class="sub">Investment</span></button>
+        <button class="amount-btn" data-amount="100000">$100K<span class="sub">Investment</span></button>
+        <button class="amount-btn" data-amount="250000">$250K<span class="sub">Investment</span></button>
+      </div>
+      <div class="calc-results">
+        <div class="calc-flows">
+          <h3>Projected LP Cash Flows</h3>
+          <table>
+            <thead>
+              <tr><th>Period</th><th>Operating Dist.</th><th>Capital Events</th><th>Total</th></tr>
+            </thead>
+            <tbody id="calcRows"></tbody>
+          </table>
+        </div>
+        <div class="calc-kpis">
+          <div class="kpi-tile">
+            <div class="lbl">Total Returned</div>
+            <div class="val" id="kpiTotal">—</div>
+          </div>
+          <div class="kpi-tile">
+            <div class="lbl">Total Profit</div>
+            <div class="val" id="kpiProfit">—</div>
+          </div>
+          <div class="kpi-tile">
+            <div class="lbl">Projected LP IRR</div>
+            <div class="val">14.0%</div>
+          </div>
+          <div class="kpi-tile">
+            <div class="lbl">Equity Multiple</div>
+            <div class="val">1.84x</div>
+          </div>
+          <div class="kpi-tile wide">
+            <div class="lbl">Capital Event (Year 5 Sale)</div>
+            <div class="val" id="kpiExit">—</div>
+          </div>
+        </div>
+      </div>
+      <p class="calc-note">Illustrative only. All cash flow, distribution, IRR, and equity multiple figures shown are <b>estimates</b> pro-rated from the V3 Base Case underwriting model on $1,550,000 LP equity: Year 1 $0 (lease-up year) · Years 2–5 ~$77,500/yr operating distributions · plus the projected Year 5 sale distribution of approximately $2.0M to LPs (return of capital + profit). These reflect the underwriting assumptions at acquisition (July 2025) and are not a promise or guarantee of future results. Distribution waterfall: 95/5 LP/GP to a 10% preferred return, then 80/20 thereafter. Not an offer to sell securities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TIMELINE (light) ============== -->
+<section class="section section-light reveal" id="timeline">
+  <div class="container-narrow">
+    <div class="section-head">
+      <span class="section-eyebrow">Transaction Timeline</span>
+      <h2>From LOI to Closing</h2>
+      <p>The actual six-phase execution plan that took Stag from broker introduction to closed and funded over a 90-day window.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-card">
+          <div class="when">Apr 4, 2025</div>
+          <h4>LOI Signed</h4>
+          <p>Sourced through Summit's St. Louis broker network from RL Sallee Real Estate Investments, LLC (Avison Young — Dan Cahill, sell-side). LOI submitted at $3.6M with 35-day diligence window.</p>
+        </div>
+        <div class="spacer"></div>
+      </div>
+      <div class="tl-item">
+        <div class="spacer"></div>
+        <div class="tl-card">
+          <div class="when">May 5, 2025</div>
+          <h4>PSA Executed</h4>
+          <p>Purchase &amp; Sale Agreement executed with $25,000 initial earnest money. Counsel: Spencer Fane (buyer) and Lewis Rice (seller). First American Title as escrow agent.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-card">
+          <div class="when">May–Jun 2025</div>
+          <h4>Due Diligence</h4>
+          <p>35-day diligence window covering CBRE appraisal, Phase I ESA, PCA, structural and roof review, tenant interviews and estoppel collection, and full lease abstraction. Additional $25,000 deposit posted on June 10 (deposit non-refundable from that point).</p>
+        </div>
+        <div class="spacer"></div>
+      </div>
+      <div class="tl-item">
+        <div class="spacer"></div>
+        <div class="tl-card">
+          <div class="when">Jun 2025</div>
+          <h4>Loan Underwriting</h4>
+          <p>Senior debt sized at $2.3M (~64% LTV) with TruStone Financial Credit Union via Servion Commercial Loan Resources. Rate locked at 6.41% on a 10-year fixed term with 30-year amortization.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-card">
+          <div class="when">Jun–Jul 2025</div>
+          <h4>Equity Raise &amp; Closing</h4>
+          <p>$1.55M equity raise from accredited investors and family offices under Reg D Rule 506(b) — $5,000 minimum investment. Bluebird Stag, LLC (Missouri pass-through) formed as the holding entity. Closed July 2025.</p>
+        </div>
+        <div class="spacer"></div>
+      </div>
+      <div class="tl-item">
+        <div class="spacer"></div>
+        <div class="tl-card">
+          <div class="when">2025–2030</div>
+          <h4>Hold &amp; Exit</h4>
+          <p>Active asset management with quarterly investor reporting. Lease renewal strategy targets the three near-term rollovers (AllCom &amp; U.S. Fabric in 2026, Lab Storage in 2027) to capture the 28% in-place-to-market rent gap. Targeted exit mid-2030 at a 7.45% terminal cap — projected 14.0% LP IRR and 1.84x equity multiple.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== GALLERY (navy) ============== -->
+<section class="section section-navy reveal" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Property Gallery</span>
+      <h2>The Asset</h2>
+      <p>4K aerial photography and on-site interior photography of 201–215 Stag Industrial Blvd captured during diligence in April 2025 (pre-acquisition).</p>
+    </div>
+    <div class="gallery-tabs" role="tablist">
+      <button class="gallery-tab active" data-filter="all">All Photos</button>
+      <button class="gallery-tab" data-filter="aerial">Aerial</button>
+      <button class="gallery-tab" data-filter="interior">Interior</button>
+    </div>
+    <div class="gallery-video-featured" onclick="toggleGalleryVideo(this)">
+      <video muted playsinline preload="metadata" poster="images/stag-aerial-hero.jpg">
+        <source src="video/stag-drone-full.mp4" type="video/mp4">
+      </video>
+      <div class="video-break-overlay"></div>
+      <div class="video-controls">
+        <div class="big-play"><svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg></div>
+      </div>
+      <div class="gallery-video-badge">
+        <svg viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+        Drone Footage &mdash; Full Flyover (1:00)
+      </div>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- ============== TEAM (light) ============== -->
+<section class="section section-light reveal" id="team">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Leadership Team</span>
+      <h2>Operated by Bluebird</h2>
+      <p>Bluebird is led by experienced principals with deep underwriting, leasing, and asset-management track records across the Midwest industrial corridor.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="images/cody-leivas-headshot.png" alt="Cody Leivas" />
+        <div>
+          <div class="role">Managing Partner</div>
+          <h3>Cody Leivas</h3>
+          <p>Cody has been involved in over $750M of commercial real estate transactions, the majority focused on industrial assets across the Midwest. He holds advanced degrees in Real Estate (Chapman University) and Investment Management &amp; Financial Analysis (Creighton University), along with a B.S. in Finance from Azusa Pacific.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/kevin-mcneil-headshot.png" alt="Kevin McNeil" />
+        <div>
+          <div class="role">Managing Partner</div>
+          <h3>Kevin McNeil</h3>
+          <p>Kevin has 20+ years in commercial real estate with 300+ closed sale transactions. Previously a Managing Director at Lincoln Property Company and Studley (now Savills North America). He holds a B.A. in Communications and Economics from Boston College.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Track Record -->
+    <div class="track-row">
+      <h3>Bluebird Track Record &amp; Alignment</h3>
+      <p>Bluebird's principals have collectively underwritten and transacted on more than $750M of commercial real estate, the majority focused on Midwest industrial. The Stag acquisition is part of an 11-property, ~450,000 SF portfolio held by Bluebird's principals and affiliated entities. The GP contributed personal capital alongside the LP raise on Stag — direct sponsor co-investment is standard practice on every Bluebird syndication.</p>
+      <p style="color:var(--ink-soft);font-size:12.5px;margin:0">Detailed property-level transaction history — including hold periods and realized vs. unrealized results — is available under NDA. Prior individual-level track record does not constitute a track record of Bluebird as a firm, and past performance is not indicative of future results.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== BLUEBIRD PORTFOLIO ============== -->
+<section class="section section-navy reveal" id="portfolio">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Sponsor Portfolio</span>
+      <h2>Bluebird's Current Portfolio</h2>
+      <p>Eleven Midwest industrial assets totaling nearly 450,000 square feet, held at low basis and actively managed through Bluebird's vertically integrated platform with Summit Real Estate Services.</p>
+    </div>
+
+    <!-- Stat strip -->
+    <div class="returns-grid" style="margin-top:18px">
+      <div class="return-tile" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)">
+        <div class="lbl" style="color:rgba(255,255,255,.66)">Industrial Assets</div>
+        <div class="val">11</div>
+      </div>
+      <div class="return-tile" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)">
+        <div class="lbl" style="color:rgba(255,255,255,.66)">SF Owned</div>
+        <div class="val">449,758</div>
+      </div>
+      <div class="return-tile" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)">
+        <div class="lbl" style="color:rgba(255,255,255,.66)">Core Markets</div>
+        <div class="val">4</div>
+      </div>
+      <div class="return-tile" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)">
+        <div class="lbl" style="color:rgba(255,255,255,.66)">States</div>
+        <div class="val">5</div>
+      </div>
+    </div>
+
+    <!-- Full property table -->
+    <div style="margin-top:40px;overflow-x:auto">
+      <table class="data-table" style="min-width:760px">
+        <thead>
+          <tr>
+            <th style="width:28px">#</th>
+            <th>Property</th>
+            <th>Market</th>
+            <th>Type</th>
+            <th>SF</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:rgba(199,145,107,.08)"><td>1</td><td><a href="#top" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:700;transition:color .2s">201&ndash;215 Stag Industrial Blvd <span style="color:var(--gold);font-weight:700">· SUBJECT</span></a><br><span style="color:var(--ink-soft);font-size:13px">Lake St. Louis, MO</span></td><td>St. Louis</td><td>Multi-tenant flex</td><td>33,817</td><td>2025</td></tr>
+          <tr><td>2</td><td><a href="https://www.bluebirdcre.co/portfolio/1285-west-terra-lane" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">1285 West Terra Lane</a><br><span style="color:var(--ink-soft);font-size:13px">O'Fallon, MO</span></td><td>St. Louis</td><td>Industrial / IOS</td><td>18,858</td><td>2025</td></tr>
+          <tr><td>3</td><td><a href="https://www.bluebirdcre.co/portfolio/7834-7842-n-faulkner-rd" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">7834&ndash;7842 N Faulkner Rd</a><br><span style="color:var(--ink-soft);font-size:13px">Milwaukee, WI</span></td><td>Milwaukee</td><td>Multi-tenant flex</td><td>29,747</td><td>2024</td></tr>
+          <tr><td>4</td><td><a href="https://www.bluebirdcre.co/portfolio/10605-trenton-avenue" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">10605 Trenton Avenue</a><br><span style="color:var(--ink-soft);font-size:13px">St. Louis, MO</span></td><td>St. Louis</td><td>Single-tenant</td><td>18,720</td><td>2024</td></tr>
+          <tr><td>5</td><td><a href="https://www.bluebirdcre.co/portfolio/4333-west-71st-street" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">4333 W 71st Street</a><br><span style="color:var(--ink-soft);font-size:13px">Indianapolis, IN</span></td><td>Indianapolis</td><td>Large-format</td><td>179,725</td><td>2023</td></tr>
+          <tr><td>6</td><td><a href="https://www.bluebirdcre.co/portfolio/3015-s-18th-street" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">3015 South 163rd Street</a><br><span style="color:var(--ink-soft);font-size:13px">New Berlin, WI</span></td><td>Milwaukee</td><td>Industrial</td><td>52,260</td><td>2023</td></tr>
+          <tr><td>7</td><td><a href="https://www.bluebirdcre.co/portfolio/9415-dielman-rock-island-dr" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">9415 Dielman Rock Island Dr</a><br><span style="color:var(--ink-soft);font-size:13px">St. Louis, MO</span></td><td>St. Louis</td><td>Flex industrial</td><td>26,778</td><td>2022</td></tr>
+          <tr><td>8</td><td><a href="https://www.bluebirdcre.co/portfolio/w141n9501-fountain-blvd" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">W141 N9501 Fountain Blvd</a><br><span style="color:var(--ink-soft);font-size:13px">Menomonee Falls, WI</span></td><td>Milwaukee</td><td>Single-tenant</td><td>38,768</td><td>2022</td></tr>
+          <tr><td>9</td><td><a href="https://www.bluebirdcre.co/portfolio/5161-wolfpen-pleasant-hill-rd" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">5161 Wolfpen-Pleasant Hill Rd</a><br><span style="color:var(--ink-soft);font-size:13px">Milford, OH</span></td><td>Cincinnati</td><td>Single-tenant</td><td>20,925</td><td>2022</td></tr>
+          <tr><td>10</td><td><a href="https://www.bluebirdcre.co/portfolio/n117w18654-fulton-drive" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">N117 W18654 Fulton Drive</a><br><span style="color:var(--ink-soft);font-size:13px">Germantown, WI</span></td><td>Milwaukee</td><td>Industrial</td><td>20,080</td><td>2022</td></tr>
+          <tr><td>11</td><td><a href="https://www.bluebirdcre.co/portfolio/4115-sw-southgate-dr" target="_blank" style="color:var(--navy);border-bottom:1px solid var(--gold);font-weight:600;transition:color .2s">4115 SW Southgate Drive</a><br><span style="color:var(--ink-soft);font-size:13px">Topeka, KS</span></td><td>Topeka</td><td>Flex industrial</td><td>10,080</td><td>2021</td></tr>
+          <tr style="background:rgba(255,255,255,.04);font-weight:700">
+            <td></td>
+            <td>Portfolio Total</td>
+            <td>5 markets</td>
+            <td>&mdash;</td>
+            <td>449,758</td>
+            <td>2021&ndash;2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="color:rgba(255,255,255,.62);font-size:12.5px;margin-top:20px;max-width:900px">Portfolio reflects assets held by Bluebird's principals and affiliated entities through Summit Real Estate Services across St. Louis, Milwaukee, Cincinnati, Indianapolis, and Topeka. 201–215 Stag Industrial Blvd is the highlighted subject of this sample microsite. Property-level purchase prices, business plans, and realized performance are available under NDA. Past principal-level performance does not constitute a track record of Bluebird as a firm and is not indicative of future results.</p>
+  </div>
+</section>
+
+<!-- ============== "WHAT YOU GET" — sales detail (light) ============== -->
+<section class="section section-light reveal" id="product">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">For Sponsors &amp; Principals</span>
+      <h2>Want a microsite like this for your next deal?</h2>
+      <p>If you're a CRE principal raising capital and your current pitch is a 50-page PDF emailed to investors, this is an upgrade. Built deal-by-deal, ready to share via private link, designed to close commitments faster.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px">
+      <div style="padding:32px 28px;background:#fff;border:1px solid var(--line-dark);border-radius:14px;box-shadow:var(--shadow-soft)">
+        <div style="font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px">What's Built</div>
+        <h3 style="margin:0 0 14px;color:var(--ink);font-size:20px">Single-page investor site</h3>
+        <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.8;color:var(--ink-soft)">
+          <li>· 506(b) access gate (name + email + invitation code + click-through attestations)</li>
+          <li>· Hero, exec summary, investment highlights</li>
+          <li>· Property overview with photo gallery + lightbox</li>
+          <li>· Tenant credit cards + rollover schedule</li>
+          <li>· Submarket section with comp table</li>
+          <li>· Live NOI chart from your underwriting model</li>
+          <li>· Sources &amp; uses, fees, distribution waterfall</li>
+          <li>· Interactive investor calculator (LP cash flow per investment size)</li>
+          <li>· Drone video integration (hero loop, mid-page break, gallery flyover)</li>
+          <li>· Lead capture into your Google Sheet on every gate unlock</li>
+        </ul>
+      </div>
+      <div style="padding:32px 28px;background:#fff;border:1px solid var(--line-dark);border-radius:14px;box-shadow:var(--shadow-soft)">
+        <div style="font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px">Timeline</div>
+        <h3 style="margin:0 0 14px;color:var(--ink);font-size:20px">~2 weeks per deal</h3>
+        <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.8;color:var(--ink-soft)">
+          <li><b style="color:var(--ink)">Days 1–2</b> &middot; Kickoff call. Hand over IM, OM, valuation model, photos. Confirm brand colors, fonts, tone.</li>
+          <li><b style="color:var(--ink)">Days 3–8</b> &middot; First draft built. Real numbers from your model, real tenants, real photos. Shared via preview link.</li>
+          <li><b style="color:var(--ink)">Days 9–12</b> &middot; Two rounds of revisions on copy, return assumptions, photo selection.</li>
+          <li><b style="color:var(--ink)">Days 13–14</b> &middot; Pushed to your GitHub repo (or hosted by Bluebird). Custom domain wired up. Lead-capture endpoint connected. Live.</li>
+        </ul>
+      </div>
+      <div style="padding:32px 28px;background:#fff;border:1px solid var(--line-dark);border-radius:14px;box-shadow:var(--shadow-soft)">
+        <div style="font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px">Who It's For</div>
+        <h3 style="margin:0 0 14px;color:var(--ink);font-size:20px">CRE syndication sponsors</h3>
+        <ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:1.8;color:var(--ink-soft)">
+          <li>· You raise $1–10M LP equity per deal under Reg D 506(b)</li>
+          <li>· Your investor base is family offices, RIAs, and HNW accredited LPs</li>
+          <li>· Your current pitch is a long PDF or a Dropbox folder</li>
+          <li>· You want investors to self-serve through the deal at their own pace before getting on a call</li>
+          <li>· You want a paper trail of who accessed materials and when (for 506(b) record-keeping)</li>
+          <li>· You'd rather spend 2 hours reviewing a microsite draft than 20 hours building one yourself</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CTA (navy gradient) ============== -->
+<section class="cta-band reveal" id="contact">
+  <div class="container-narrow">
+    <span class="section-eyebrow">Get Started</span>
+    <h2>Email Bluebird about your next deal.</h2>
+    <p>Send a one-line note about the deal you're raising for. We'll send back pricing, timeline, and a couple of clarifying questions. No obligation, no sales pitch on the first email.</p>
+    <div class="cta-actions">
+      <a href="mailto:cleivas@bluebirdcre.co?subject=Investor%20Microsite%20Inquiry&body=Hi%20Cody%2C%0A%0AI%27m%20raising%20capital%20for%20a%20%5B___%5D%20deal%20and%20interested%20in%20a%20Bluebird%20investor%20microsite.%0A%0ADeal%20size%3A%20%24%5B___%5D%20LP%20equity%0AAsset%20type%3A%20%5B___%5D%0ATarget%20launch%3A%20%5B___%5D%0A%0AThanks%2C%0A%5BYour%20name%5D" class="btn-rounded">Email Bluebird <span aria-hidden="true">→</span></a>
+      <a href="tel:+19492909150" class="btn-ghost">Call (949) 290-9150</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-col foot-brand">
+        <img src="images/bluebird-logo.png" alt="Bluebird Commercial Real Estate" />
+        <p>Bluebird invests in institutional-grade industrial properties across Milwaukee, St. Louis, Minneapolis, Indianapolis, and the broader Midwest industrial corridor.</p>
+      </div>
+      <div class="foot-col">
+        <h4>This Offering</h4>
+        <a href="#overview">Property Overview</a>
+        <a href="#tenants">Tenant Summary</a>
+        <a href="#financials">Financial Performance</a>
+        <a href="#timeline">Transaction Timeline</a>
+      </div>
+      <div class="foot-col">
+        <h4>Bluebird</h4>
+        <a href="https://www.bluebirdcre.co" target="_blank" rel="noopener">About Bluebird</a>
+        <a href="https://www.bluebirdcre.co" target="_blank" rel="noopener">Investment Thesis</a>
+        <a href="https://www.bluebirdcre.co" target="_blank" rel="noopener">Markets</a>
+        <a href="https://www.bluebirdcre.co" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="mailto:cleivas@bluebirdcre.co">cleivas@bluebirdcre.co</a>
+        <a href="tel:+19492909150">(949) 290-9150</a>
+        <p>Orange County, CA</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>&copy; 2026 Bluebird Commercial Real Estate. All rights reserved.</span>
+      <span>Sample Investor Microsite &middot; Closed Deal</span>
+    </div>
+    <div class="disclaimer">
+      <p style="margin:0 0 10px"><b>Sample microsite for a closed deal &middot; Not an offering of securities.</b> This page is a publicly-shared example of how Bluebird Commercial Real Estate presents a syndicated deal to investors. The 201–215 Stag Industrial Blvd transaction closed in July 2025 and is no longer accepting investors. The figures shown reflect the underwriting at acquisition. This page is shared as a representative work-product sample for prospective sponsors evaluating Bluebird's investor-microsite product, and for general transparency about Bluebird's investment thesis and approach.</p>
+      <p style="margin:0 0 10px"><b>All figures are estimates from acquisition underwriting.</b> Property information, physical specifications (building area, land size, year built, clear height, loading, parking, power, construction type), tenant data (rents, lease terms, expiration dates, occupied square footage, tenant credit descriptions), market and submarket data (vacancy, rents, rent growth, comps), financial projections (NOI, cash flows, distributions, cap rates, DSCR, sensitivity outputs), capital structure items (sources, uses, closing costs), fee schedule amounts, and return metrics (target IRR, equity multiple, cash-on-cash, sale proceeds) shown on this page are the <b>forward-looking estimates</b> from the V3 Base Case underwriting model used at acquisition. They reflected our best estimates as of July 2025 and are not guarantees. Actual operating performance and realized investor returns will differ from these estimates. Physical specifications are sourced from CBRE appraisal, ALTA survey, Phase I ESA, and broker materials.</p>
+      <p style="margin:0">This material is for illustrative and informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. The sponsor's principal-level prior experience does not constitute a track record of Bluebird as a firm. Past performance is not indicative of future results. Real estate investments are illiquid and speculative; investment returns are not guaranteed and investors may lose some or all of their invested capital.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============== LIGHTBOX ============== -->
+<div class="lb" id="lightbox" aria-hidden="true">
+  <button class="close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="nav-btn prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <img id="lbImg" alt="" />
+  <button class="nav-btn next" id="lbNext" aria-label="Next">&#8250;</button>
+  <div class="counter" id="lbCounter"></div>
+</div>
+
+<script>
+/* -------- Sample-deal microsite: no access gate.
+ *  The Bluebird investor-microsite product (sold to other CRE principals) does include
+ *  a full 506(b) access gate (name/email/invitation code + pre-existing-relationship,
+ *  accredited-investor, and confidentiality click-throughs, with Google Sheet lead capture).
+ *  See the Wedgeway template for the canonical implementation.
+ */
+
+/* -------- Nav scroll shadow -------- */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 16);
+});
+
+/* -------- Reveal animations -------- */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* -------- Staggered child reveals -------- */
+const childIO = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const parent = entry.target;
+    const children = parent.querySelectorAll('.reveal-child');
+    children.forEach((ch, i) => {
+      setTimeout(() => ch.classList.add('in'), i * 120);
+    });
+    childIO.unobserve(parent);
+  });
+}, { threshold: 0.06 });
+document.querySelectorAll('.cards-4, .returns-grid, .submarket-grid, .hero-stats, .stack-3, .tenant-credit-grid, .amount-picker, .fees-grid, .timeline').forEach(el => {
+  // Tag direct children for stagger
+  Array.from(el.children).forEach(ch => ch.classList.add('reveal-child'));
+  childIO.observe(el);
+});
+
+/* -------- Animated counter for hero stats -------- */
+function animateValue(el, end, duration, suffix) {
+  const isFloat = String(end).includes('.');
+  const start = 0;
+  const range = end - start;
+  const startTime = performance.now();
+  function tick(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    // ease-out cubic
+    const ease = 1 - Math.pow(1 - progress, 3);
+    const current = start + range * ease;
+    if (isFloat) {
+      el.textContent = current.toFixed(1) + suffix;
+    } else {
+      el.textContent = Math.round(current).toLocaleString() + suffix;
+    }
+    if (progress < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+const heroIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const nums = e.target.querySelectorAll('.hero-stat-num');
+    nums.forEach(n => {
+      const raw = n.textContent.trim();
+      // Parse: "43,426" → 43426, "14.2%" → 14.2, "10 yr" → 10, "2.80x" → 2.80
+      if (raw.includes(',')) {
+        const val = parseInt(raw.replace(/,/g, ''), 10);
+        animateValue(n, val, 1400, '');
+        // restore comma formatting after
+        setTimeout(() => { n.textContent = raw; }, 1500);
+      } else if (raw.includes('%')) {
+        const val = parseFloat(raw);
+        animateValue(n, val, 1200, '%');
+      } else if (raw.includes('yr')) {
+        const val = parseInt(raw, 10);
+        animateValue(n, val, 800, ' yr');
+      } else if (raw.includes('x')) {
+        const val = parseFloat(raw);
+        const dur = 1200;
+        const startTime = performance.now();
+        (function tick(now) {
+          const p = Math.min((now - startTime) / dur, 1);
+          const ease = 1 - Math.pow(1 - p, 3);
+          n.textContent = (val * ease).toFixed(2) + 'x';
+          if (p < 1) requestAnimationFrame(tick);
+        })(performance.now());
+      }
+    });
+    heroIO.unobserve(e.target);
+  });
+}, { threshold: 0.3 });
+const heroStats = document.querySelector('.hero-stats');
+if (heroStats) heroIO.observe(heroStats);
+
+/* -------- NOI chart entrance animation -------- */
+const chartWrap = document.querySelector('.noi-chart-wrap');
+if (chartWrap) {
+  const chartIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        chartIO.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  chartIO.observe(chartWrap);
+}
+
+/* -------- Gallery -------- */
+const aerialPhotos = [
+  'stag-aerial-hero',
+  'stag-aerial-front',
+  'stag-front-wide',
+  'stag-aerial-context',
+  'stag-aerial-side',
+  'stag-loading-docks',
+  'stag-rear-loading-aerial',
+  'stag-loading-with-truck',
+  'stag-side-yard',
+  'stag-rear-side',
+  'stag-back-corner',
+  'stag-rear-clean'
+].map(n => ({ src:`images/${n}.jpg`, type:'aerial' }));
+
+const interiorPhotos = [
+  'stag-interior-rexel-showroom',
+  'stag-interior-rexel-warehouse',
+  'stag-interior-usfabric',
+  'stag-interior-warehouse',
+  'stag-interior-electrical',
+  'stag-interior-office'
+].map(n => ({ src:`images/${n}.jpg`, type:'interior' }));
+
+const allPhotos = [...aerialPhotos, ...interiorPhotos];
+const grid = document.getElementById('galleryGrid');
+
+function renderGallery(filter='all'){
+  const items = filter==='all' ? allPhotos : allPhotos.filter(p => p.type===filter);
+  grid.innerHTML = items.map((p, i) =>
+    `<div class="g-item" data-index="${i}"><img src="${p.src}" alt="Property photo ${i+1}" loading="lazy" /></div>`
+  ).join('');
+  document.querySelectorAll('.g-item').forEach(el => {
+    el.addEventListener('click', () => openLightbox(items, parseInt(el.dataset.index,10)));
+  });
+}
+renderGallery();
+
+document.querySelectorAll('.gallery-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.gallery-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderGallery(btn.dataset.filter);
+  });
+});
+
+/* -------- Lightbox -------- */
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+const lbCounter = document.getElementById('lbCounter');
+let lbList = [], lbIdx = 0;
+
+function openLightbox(list, idx){
+  lbList = list; lbIdx = idx;
+  lbImg.src = list[idx].src;
+  lbCounter.textContent = `${idx+1} / ${list.length}`;
+  lb.classList.add('open');
+  lb.setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  lb.classList.remove('open');
+  lb.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+}
+function step(d){
+  lbIdx = (lbIdx + d + lbList.length) % lbList.length;
+  lbImg.src = lbList[lbIdx].src;
+  lbCounter.textContent = `${lbIdx+1} / ${lbList.length}`;
+}
+document.getElementById('lbClose').addEventListener('click', closeLightbox);
+document.getElementById('lbPrev').addEventListener('click', () => step(-1));
+document.getElementById('lbNext').addEventListener('click', () => step(1));
+lb.addEventListener('click', e => { if(e.target === lb) closeLightbox(); });
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') step(1);
+  if (e.key === 'ArrowLeft') step(-1);
+});
+
+/* -------- NOI Chart -------- */
+/* Source: V3 (Base) Bluebird Stag model — 5-year hold, NOI by trailing-12 from Jul 2025 close. */
+const ctx = document.getElementById('noiChart').getContext('2d');
+const noi = [246784, 275248, 316777, 316363, 356271];
+const noiLabels = ['Yr 1','Yr 2','Yr 3','Yr 4','Yr 5'];
+const grad = ctx.createLinearGradient(0, 0, 0, 380);
+grad.addColorStop(0, '#C7916B');
+grad.addColorStop(1, 'rgba(199,145,107,.55)');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: noiLabels,
+    datasets: [{
+      data: noi,
+      backgroundColor: grad,
+      borderRadius: 6,
+      borderSkipped: false,
+      maxBarThickness: 72,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#0D1B2B',
+        titleColor: '#C7916B',
+        bodyColor: '#fff',
+        padding: 12,
+        borderColor: 'rgba(199,145,107,.4)',
+        borderWidth: 1,
+        callbacks: {
+          label: ctx => '$' + ctx.parsed.y.toLocaleString()
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { display: false },
+        ticks: { color: '#4B5568', font: { family:'Inter', size: 12, weight: 500 } }
+      },
+      y: {
+        grid: { color: 'rgba(13,27,43,.06)', drawBorder: false },
+        ticks: {
+          color: '#4B5568',
+          font: { family:'Inter', size: 12 },
+          callback: v => '$' + (v/1000).toFixed(0) + 'k'
+        }
+      }
+    }
+  }
+});
+
+/* -------- Investor Calculator --------
+   Source: V3 (Base) Bluebird Stag underwriting model. LP distributions on $1,550,000 LP equity base.
+   Year 1: lease-up (no operating distributions). Years 2-5: $77,500/yr operating distributions per V3 base case.
+   Year 5: capital event = projected sale distribution to LPs (return of capital + profit) calibrated
+   to deliver the IM-headline 14.0% LP IRR / 1.84x equity multiple at the 7.45% terminal cap.
+*/
+const LP_EQUITY = 1550000;
+const LP_OP   = [0,       77500,   77500,   77500,   77500   ]; // Operating distributions Y1-Y5
+const LP_CAP  = [0,       0,       0,       0,       2542000 ]; // Capital event: Year 5 sale to LPs (ROC + profit)
+
+const fmt = n => '$' + Math.round(n).toLocaleString();
+
+function renderCalc(amount){
+  const mult = amount / LP_EQUITY;
+  const rows = [];
+  let totalOp = 0, totalCap = 0;
+  for (let i = 0; i < 5; i++){
+    const op = LP_OP[i] * mult;
+    const cap = LP_CAP[i] * mult;
+    totalOp += op; totalCap += cap;
+    rows.push(
+      `<tr><td>Year ${i+1}</td><td>${op > 0 ? fmt(op) : '—'}</td><td>${cap > 0 ? fmt(cap) : '—'}</td><td><b>${(op+cap) > 0 ? fmt(op+cap) : '—'}</b></td></tr>`
+    );
+  }
+  const total = totalOp + totalCap;
+  const profit = total - amount;
+  rows.push(
+    `<tr class="total"><td>Total</td><td>${fmt(totalOp)}</td><td>${fmt(totalCap)}</td><td>${fmt(total)}</td></tr>`
+  );
+  document.getElementById('calcRows').innerHTML = rows.join('');
+  document.getElementById('kpiTotal').textContent = fmt(total);
+  document.getElementById('kpiProfit').textContent = fmt(profit);
+  document.getElementById('kpiExit').textContent = fmt(totalCap);
+}
+
+document.querySelectorAll('.amount-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderCalc(parseInt(btn.dataset.amount, 10));
+    // Pulse KPI tiles on selection change
+    document.querySelectorAll('.kpi-tile').forEach(t => {
+      t.classList.remove('pulse');
+      void t.offsetWidth; // reflow
+      t.classList.add('pulse');
+    });
+  });
+});
+renderCalc(25000);
+
+/* -------- Video Controls -------- */
+function toggleDroneVideo(controls){
+  const video = document.getElementById('droneVideoBreak');
+  if(video.paused){
+    video.play();
+    controls.classList.add('playing');
+  } else {
+    video.pause();
+    controls.classList.remove('playing');
+  }
+}
+
+function toggleSplitVideo(container){
+  const video = container.querySelector('video');
+  const controls = container.querySelector('.video-controls');
+  if(video.paused){
+    video.play();
+    controls.classList.add('playing');
+  } else {
+    video.pause();
+    controls.classList.remove('playing');
+  }
+}
+
+function toggleGalleryVideo(container){
+  const video = container.querySelector('video');
+  const controls = container.querySelector('.video-controls');
+  if(video.paused){
+    video.play();
+    controls.classList.add('playing');
+  } else {
+    video.pause();
+    controls.classList.remove('playing');
+  }
+}
+
+/* Auto-pause videos when out of viewport */
+const allVideos = document.querySelectorAll('.video-break video, .split-video video, .gallery-video-featured video');
+const videoObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(!entry.isIntersecting && !entry.target.paused){
+      entry.target.pause();
+      const controls = entry.target.closest('.video-break-inner, .split-video, .gallery-video-featured');
+      if(controls){
+        const ctrl = controls.querySelector('.video-controls');
+        if(ctrl) ctrl.classList.remove('playing');
+      }
+    }
+  });
+}, { threshold: 0.1 });
+allVideos.forEach(v => videoObserver.observe(v));
+</script>
+</body>
+</html>
