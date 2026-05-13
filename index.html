@@ -1232,17 +1232,16 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="#overview">Overview</a>
       <a href="#tenants">Tenants</a>
-      <a href="#inside">Inside</a>
-      <a href="#floorplans">Plans</a>
-      <a href="#submarket">Market</a>
       <a href="#financials">Financials</a>
       <a href="#calculator">Calculator</a>
-      <a href="#team">Team</a>
+      <a href="#deal-update">Update</a>
       <a href="#portfolio">Portfolio</a>
     </nav>
     <div class="nav-cta">
-      <a href="https://investors.appfolioim.com/bluebirdcre/investor/login" class="login" target="_blank" rel="noopener">Investor Login</a>
-      <a href="#contact" class="btn-pill">Invest With Us</a>
+      <a href="bb-stag-investment-memorandum.pdf" class="btn-pill" download>
+        <svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Memo
+      </a>
     </div>
     <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
@@ -2299,6 +2298,7 @@
         <a href="https://www.bluebirdcre.co" target="_blank" rel="noopener">Investment Thesis</a>
         <a href="https://www.bluebirdcre.co" target="_blank" rel="noopener">Markets</a>
         <a href="https://www.bluebirdcre.co" target="_blank" rel="noopener">Portfolio</a>
+        <a href="https://investors.appfolioim.com/bluebirdcre/investor/login" target="_blank" rel="noopener">Investor Login &nearr;</a>
       </div>
       <div class="foot-col">
         <h4>Contact</h4>
@@ -2352,7 +2352,7 @@ window.addEventListener('scroll', () => {
 });
 
 /* -------- Section highlight in nav (active link follows scroll) -------- */
-const sectionsForNav = ['overview','tenants','inside','floorplans','submarket','financials','calculator','team','portfolio'];
+const sectionsForNav = ['overview','tenants','financials','calculator','deal-update','portfolio'];
 const navLinkMap = {};
 document.querySelectorAll('.nav-links a').forEach(a => {
   const href = a.getAttribute('href');
