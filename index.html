@@ -122,6 +122,115 @@
     transition:background .25s ease, box-shadow .25s ease;
   }
   .nav.scrolled{background:rgba(13,27,43,.96);box-shadow:0 6px 24px rgba(0,0,0,.25)}
+  /* Sticky scroll progress bar across the very top */
+  .scroll-progress{
+    position:absolute;top:0;left:0;height:2px;
+    background:linear-gradient(90deg, var(--gold) 0%, #d29e75 100%);
+    width:0%;transition:width .1s linear;z-index:51;
+  }
+  /* Section highlight in nav */
+  .nav-links a.active{color:var(--gold);opacity:1}
+  .nav-links a.active::after{
+    content:"";display:block;height:2px;background:var(--gold);
+    margin-top:4px;border-radius:2px;
+  }
+  /* Hamburger button (hidden on desktop) */
+  .nav-hamburger{
+    display:none;width:44px;height:44px;align-items:center;justify-content:center;
+    background:transparent;border:0;cursor:pointer;color:#fff;
+  }
+  .nav-hamburger span{
+    display:block;width:22px;height:2px;background:#fff;border-radius:2px;
+    position:relative;transition:transform .25s ease;
+  }
+  .nav-hamburger span::before, .nav-hamburger span::after{
+    content:"";position:absolute;left:0;width:22px;height:2px;background:#fff;
+    border-radius:2px;transition:transform .25s ease, top .25s ease;
+  }
+  .nav-hamburger span::before{top:-7px}
+  .nav-hamburger span::after{top:7px}
+  .nav-hamburger.open span{background:transparent}
+  .nav-hamburger.open span::before{top:0;transform:rotate(45deg)}
+  .nav-hamburger.open span::after{top:0;transform:rotate(-45deg)}
+  /* Mobile drawer (full-screen menu) */
+  .nav-drawer{
+    position:fixed;top:0;right:0;bottom:0;width:100%;max-width:360px;
+    background:linear-gradient(135deg, #122236 0%, #0D1B2B 100%);
+    border-left:1px solid var(--gold-line);
+    z-index:49;transform:translateX(100%);transition:transform .3s ease;
+    display:flex;flex-direction:column;padding:96px 32px 40px;
+    box-shadow:-20px 0 60px rgba(0,0,0,.5);
+  }
+  .nav-drawer.open{transform:translateX(0)}
+  .nav-drawer a{
+    display:block;font-family:var(--serif);font-size:22px;font-weight:600;
+    color:#fff;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08);
+    transition:color .2s, padding .2s;
+  }
+  .nav-drawer a:hover, .nav-drawer a:active{color:var(--gold);padding-left:6px}
+  .nav-drawer .drawer-cta{
+    margin-top:32px;display:flex;flex-direction:column;gap:14px;
+  }
+  .nav-drawer .drawer-cta a{
+    border:0;text-align:center;padding:14px 22px;border-radius:10px;
+    font-family:var(--sans);font-size:14px;font-weight:600;
+  }
+  .nav-drawer .drawer-cta a.primary{background:var(--gold);color:var(--navy)}
+  .nav-drawer .drawer-cta a.secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.22)}
+  .nav-drawer .drawer-foot{
+    margin-top:auto;padding-top:32px;border-top:1px solid rgba(255,255,255,.08);
+    font-size:12px;color:rgba(255,255,255,.55);line-height:1.6;
+  }
+  .nav-drawer .drawer-foot a{
+    display:inline;border:0;font-family:var(--sans);font-size:12px;
+    color:var(--gold);font-weight:500;padding:0;
+  }
+  .nav-overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:48;
+    opacity:0;pointer-events:none;transition:opacity .3s ease;
+  }
+  .nav-overlay.open{opacity:1;pointer-events:auto}
+  body.drawer-open{overflow:hidden}
+  @media (max-width:860px){
+    .nav-links, .nav-cta{display:none}
+    .nav-hamburger{display:flex}
+    /* Deal snapshot tiles 5 → 2 columns on mobile (much cleaner than 3+2 orphan layout) */
+    .deal-snapshot{grid-template-columns:repeat(2,1fr) !important;padding:18px !important}
+    /* Floor plan suite cards 4 → 2 columns */
+    #floorplans .container > div[style*="grid-template-columns:repeat(4"]{grid-template-columns:repeat(2,1fr) !important}
+    /* Inside the Building 3 → 1 column */
+    #inside .container > div[style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr !important}
+    /* Product / sales pitch 3 → 1 column */
+    #product .container > div[style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr !important}
+    /* Tighten section padding for mobile */
+    .section{padding:60px 0 !important}
+  }
+  @media (max-width:540px){
+    /* Deal snapshot 2 → 1 column on small phones */
+    .deal-snapshot{grid-template-columns:1fr !important}
+    /* Floor plan suite cards 2 → 1 column on small phones */
+    #floorplans .container > div[style*="grid-template-columns:repeat(2"]{grid-template-columns:1fr !important}
+    /* Hero h1 a touch smaller */
+    .hero h1{font-size:clamp(36px,9vw,52px) !important}
+  }
+  /* Force horizontal scroll wrapper on the portfolio table */
+  #portfolio table{min-width:680px}
+  #portfolio .container > div:has(table){overflow-x:auto;-webkit-overflow-scrolling:touch}
+  /* Same for rollover schedule (parent already has overflow-x:auto inline) */
+  .rollover-schedule table{min-width:640px}
+  /* Back-to-top floating button */
+  .back-to-top{
+    position:fixed;bottom:24px;right:24px;width:48px;height:48px;
+    background:var(--gold);color:var(--navy);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 24px rgba(199,145,107,.4);
+    cursor:pointer;border:0;z-index:40;
+    opacity:0;pointer-events:none;transform:translateY(12px);
+    transition:opacity .25s ease, transform .25s ease, background .2s;
+  }
+  .back-to-top.visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+  .back-to-top:hover{background:#d29e75}
+  .back-to-top svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2.5}
   .nav-inner{
     display:flex;align-items:center;justify-content:space-between;
     height:81px;max-width:var(--container);margin:0 auto;padding:0 28px;
@@ -1115,6 +1224,7 @@
 
 <!-- ============== NAV ============== -->
 <header class="nav" id="nav">
+  <div class="scroll-progress" id="scrollProgress"></div>
   <div class="nav-inner">
     <a href="#top" class="brand" aria-label="Bluebird Commercial Real Estate">
       <img src="images/bluebird-logo.png" alt="Bluebird Commercial Real Estate" />
@@ -1134,8 +1244,38 @@
       <a href="https://investors.appfolioim.com/bluebirdcre/investor/login" class="login" target="_blank" rel="noopener">Investor Login</a>
       <a href="#contact" class="btn-pill">Invest With Us</a>
     </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
+
+<!-- Mobile drawer (off-canvas) -->
+<div class="nav-overlay" id="navOverlay"></div>
+<aside class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <a href="#overview">Overview</a>
+  <a href="#tenants">Tenants</a>
+  <a href="#inside">Inside the Building</a>
+  <a href="#floorplans">Floor Plans</a>
+  <a href="#submarket">Submarket</a>
+  <a href="#financials">Financials</a>
+  <a href="#calculator">Calculator</a>
+  <a href="#timeline">Timeline</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#team">Team</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#deal-update">Latest Update</a>
+  <div class="drawer-cta">
+    <a href="bb-stag-investment-memorandum.pdf" class="primary" download>Download Investment Memo</a>
+    <a href="#contact" class="secondary">Contact Bluebird</a>
+  </div>
+  <div class="drawer-foot">
+    Sample microsite for the closed Bluebird Stag deal. Built by Bluebird Commercial Real Estate. <a href="mailto:cleivas@bluebirdcre.co">cleivas@bluebirdcre.co</a>
+  </div>
+</aside>
+
+<!-- Back-to-top floating button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><polyline points="6 15 12 9 18 15"/></svg>
+</button>
 
 <!-- ============== HERO ============== -->
 <section class="hero" id="top">
@@ -1154,7 +1294,7 @@
         <h1>201–215 Stag Industrial Blvd<span class="accent">St. Charles County Flex</span></h1>
         <p class="lead">A 33,817 SF, 100% leased multi-tenant industrial flex acquisition in one of the St. Louis MSA's most supply-constrained submarkets — anchored by four national and regional tenants, with in-place rents 28% below market and a clear path to mark-to-market upside over a 5-year hold.</p>
         <div class="hero-ctas">
-          <a href="#contact" class="btn-rounded">See How We Present Deals <span aria-hidden="true">→</span></a>
+          <a href="bb-stag-investment-memorandum.pdf" class="btn-rounded" download>Download Investment Memo <span aria-hidden="true">↓</span></a>
           <a href="#financials" class="btn-link">View Financials <span aria-hidden="true">→</span></a>
         </div>
         <div class="hero-stats">
@@ -1989,8 +2129,93 @@
   </div>
 </section>
 
-<!-- ============== "WHAT YOU GET" — sales detail (light) ============== -->
-<section class="section section-light reveal" id="product">
+<!-- ============== DEAL UPDATE (light) ============== -->
+<section class="section section-light reveal" id="deal-update">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow" style="color:#1f7a5a">Latest Update &middot; Q2 2026</span>
+      <h2>Mark-to-market thesis playing out.</h2>
+      <p>Both 2026 lease expirations have been signed at <b>above-market rents</b>, validating the central underwriting thesis. The two near-term rollovers that drove the value-creation case are now de-risked.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:36px;max-width:1000px;margin-left:auto;margin-right:auto">
+      <div style="padding:32px 28px;background:#fff;border:1px solid var(--line-dark);border-radius:14px;box-shadow:var(--shadow-soft);position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg, #1f7a5a, #2ea580)"></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px">
+          <div>
+            <div style="font-size:11px;color:var(--ink-soft);font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px">Renewal Signed</div>
+            <h3 style="margin:0;color:var(--ink);font-size:22px">AllCom Global Services</h3>
+            <p style="margin:4px 0 0;font-size:13px;color:var(--ink-soft)">Suite 201 &middot; 10,155 SF (30.0% of building)</p>
+          </div>
+          <span style="background:#1f7a5a;color:#fff;font-size:11px;font-weight:700;padding:6px 12px;border-radius:6px;letter-spacing:.04em;white-space:nowrap">SIGNED</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:18px;background:var(--light-2);border-radius:10px">
+          <div>
+            <div style="font-size:11px;color:var(--ink-soft);font-weight:600;letter-spacing:.12em;text-transform:uppercase">Prior Rent</div>
+            <div style="font-family:var(--serif);font-size:24px;color:var(--ink-soft);margin-top:4px">$7.50<span style="font-size:14px;color:var(--ink-soft);font-weight:400">/SF NNN</span></div>
+          </div>
+          <div>
+            <div style="font-size:11px;color:#1f7a5a;font-weight:600;letter-spacing:.12em;text-transform:uppercase">New Rent</div>
+            <div style="font-family:var(--serif);font-size:24px;color:#1f7a5a;margin-top:4px">$10.50<span style="font-size:14px;color:#1f7a5a;font-weight:400">/SF NNN</span></div>
+          </div>
+        </div>
+        <p style="margin:14px 0 0;font-size:13.5px;color:var(--ink-soft);line-height:1.6"><b style="color:#1f7a5a">+40% rent lift</b> on lease commencement May 2026. Multi-year term with annual escalations. Tenant continues to use the suite as their regional IT/network deployment hub.</p>
+      </div>
+      <div style="padding:32px 28px;background:#fff;border:1px solid var(--line-dark);border-radius:14px;box-shadow:var(--shadow-soft);position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg, #1f7a5a, #2ea580)"></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px">
+          <div>
+            <div style="font-size:11px;color:var(--ink-soft);font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px">Renewal Signed</div>
+            <h3 style="margin:0;color:var(--ink);font-size:22px">U.S. Fabric Solutions</h3>
+            <p style="margin:4px 0 0;font-size:13px;color:var(--ink-soft)">Suites 205 &amp; 207 &middot; 6,521 SF (19.3% of building)</p>
+          </div>
+          <span style="background:#1f7a5a;color:#fff;font-size:11px;font-weight:700;padding:6px 12px;border-radius:6px;letter-spacing:.04em;white-space:nowrap">SIGNED</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:18px;background:var(--light-2);border-radius:10px">
+          <div>
+            <div style="font-size:11px;color:var(--ink-soft);font-weight:600;letter-spacing:.12em;text-transform:uppercase">Prior Rent</div>
+            <div style="font-family:var(--serif);font-size:24px;color:var(--ink-soft);margin-top:4px">$8.25<span style="font-size:14px;color:var(--ink-soft);font-weight:400">/SF NNN</span></div>
+          </div>
+          <div>
+            <div style="font-size:11px;color:#1f7a5a;font-weight:600;letter-spacing:.12em;text-transform:uppercase">New Rent</div>
+            <div style="font-family:var(--serif);font-size:24px;color:#1f7a5a;margin-top:4px">$11.00<span style="font-size:14px;color:#1f7a5a;font-weight:400">/SF NNN</span></div>
+          </div>
+        </div>
+        <p style="margin:14px 0 0;font-size:13.5px;color:var(--ink-soft);line-height:1.6"><b style="color:#1f7a5a">+33% rent lift</b> on lease commencement May 2026. Renewal exercised one of the option years. Family-owned operator (HouseFabric.com) continuing in-place.</p>
+      </div>
+    </div>
+    <div style="max-width:1000px;margin:32px auto 0;padding:24px 28px;background:linear-gradient(135deg, rgba(31,122,90,.08), rgba(46,165,128,.04));border:1px solid rgba(31,122,90,.2);border-radius:14px">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center">
+        <div>
+          <div style="font-size:11px;color:var(--ink-soft);font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">Combined New Annual Rent</div>
+          <div style="font-family:var(--serif);font-size:28px;color:var(--ink);font-weight:600">$178,358</div>
+          <div style="font-size:12px;color:var(--ink-soft);margin-top:4px">vs. $130,961 prior &middot; <b style="color:#1f7a5a">+$47,398/yr (+36%)</b></div>
+        </div>
+        <div>
+          <div style="font-size:11px;color:var(--ink-soft);font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">% of NOI Re-Underwritten</div>
+          <div style="font-family:var(--serif);font-size:28px;color:var(--ink);font-weight:600">~52%</div>
+          <div style="font-size:12px;color:var(--ink-soft);margin-top:4px">at higher rents than UW assumed</div>
+        </div>
+        <div>
+          <div style="font-size:11px;color:var(--ink-soft);font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">vs. UW Renewal Assumption</div>
+          <div style="font-family:var(--serif);font-size:28px;color:#1f7a5a;font-weight:600">+$1.00/SF</div>
+          <div style="font-size:12px;color:var(--ink-soft);margin-top:4px">UW assumed ~$9.50; signed at ~$10.75 wtd avg</div>
+        </div>
+      </div>
+    </div>
+    <p style="color:var(--ink-soft);font-size:12px;margin-top:18px;line-height:1.55;text-align:center;max-width:900px;margin-left:auto;margin-right:auto">Renewal terms confirmed by executed lease amendments. Forward IRR projection updated upward but not yet republished here — contact Bluebird for the revised pro forma. Lab Storage Systems (Feb 2027 expiry) and Rexel USA (Mar 2028 expiry) remain as the next two rollover events.</p>
+  </div>
+</section>
+
+<!-- ============== "BUILT BY BLUEBIRD" — small footer credit (was 3-column sales section) ============== -->
+<section class="section section-navy-2 reveal" id="product" style="padding:48px 0">
+  <div class="container-narrow" style="text-align:center">
+    <div style="display:inline-flex;align-items:center;gap:12px;padding:8px 20px;border:1px solid var(--gold-line);background:var(--gold-soft);color:var(--gold);border-radius:9999px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px">Built by Bluebird</div>
+    <p style="color:rgba(255,255,255,.78);font-size:16px;line-height:1.7;max-width:680px;margin:0 auto">This sample microsite was built by Bluebird Commercial Real Estate as a representative example of how we present a syndicated deal to investors. Bluebird builds investor microsites for CRE syndication sponsors raising capital under Reg D. <a href="mailto:cleivas@bluebirdcre.co?subject=Investor%20Microsite%20Inquiry" style="color:var(--gold);border-bottom:1px dotted var(--gold-line);font-weight:600">Inquire about a microsite for your next deal &rarr;</a></p>
+  </div>
+</section>
+
+<!-- ============== ORIGINAL 3-COL SALES SECTION (commented out) ============== -->
+<section class="section section-light reveal" id="product-detail-hidden" style="display:none">
   <div class="container">
     <div class="section-head">
       <span class="section-eyebrow">For Sponsors &amp; Principals</span>
@@ -2111,11 +2336,62 @@
  *  See the Wedgeway template for the canonical implementation.
  */
 
-/* -------- Nav scroll shadow -------- */
+/* -------- Nav scroll shadow + scroll progress bar -------- */
 const nav = document.getElementById('nav');
+const scrollProgress = document.getElementById('scrollProgress');
+const backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 16);
+  const y = window.scrollY;
+  nav.classList.toggle('scrolled', y > 16);
+  if (scrollProgress) {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = max > 0 ? (y / max) * 100 : 0;
+    scrollProgress.style.width = pct + '%';
+  }
+  if (backToTop) backToTop.classList.toggle('visible', y > 800);
 });
+
+/* -------- Section highlight in nav (active link follows scroll) -------- */
+const sectionsForNav = ['overview','tenants','inside','floorplans','submarket','financials','calculator','team','portfolio'];
+const navLinkMap = {};
+document.querySelectorAll('.nav-links a').forEach(a => {
+  const href = a.getAttribute('href');
+  if (href && href.startsWith('#')) navLinkMap[href.slice(1)] = a;
+});
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting && e.intersectionRatio > 0.25) {
+      Object.values(navLinkMap).forEach(a => a.classList.remove('active'));
+      const id = e.target.id;
+      if (navLinkMap[id]) navLinkMap[id].classList.add('active');
+    }
+  });
+}, { threshold: [0.25, 0.5], rootMargin: '-90px 0px -50% 0px' });
+sectionsForNav.forEach(id => {
+  const el = document.getElementById(id);
+  if (el) sectionObserver.observe(el);
+});
+
+/* -------- Mobile hamburger / drawer -------- */
+const hamburger = document.getElementById('navHamburger');
+const drawer = document.getElementById('navDrawer');
+const overlay = document.getElementById('navOverlay');
+function setDrawer(open) {
+  if (!hamburger || !drawer || !overlay) return;
+  hamburger.classList.toggle('open', open);
+  drawer.classList.toggle('open', open);
+  overlay.classList.toggle('open', open);
+  document.body.classList.toggle('drawer-open', open);
+  hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+}
+if (hamburger) hamburger.addEventListener('click', () => setDrawer(!drawer.classList.contains('open')));
+if (overlay) overlay.addEventListener('click', () => setDrawer(false));
+if (drawer) drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setDrawer(false)));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') setDrawer(false); });
+
+/* -------- Back-to-top click -------- */
+if (backToTop) backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 /* -------- Reveal animations -------- */
 const io = new IntersectionObserver((entries) => {
