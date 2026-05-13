@@ -237,7 +237,11 @@
   }
   .brand{display:flex;align-items:center;gap:10px}
   .brand img{height:36px;width:auto;filter:brightness(0) invert(1)}
-  .nav-links{display:flex;align-items:center;gap:36px}
+  .nav-links{display:flex;align-items:center;gap:28px}
+  @media (max-width:1100px){
+    .nav-links{gap:22px}
+    .nav-links a{font-size:13px}
+  }
   .nav-links a{
     font-size:14px;font-weight:500;color:#fff;opacity:.92;
     transition:color .2s,opacity .2s;
